@@ -9,7 +9,7 @@
 	<title>
 	Comments for user&#039;s Blog!	</title>
 	<atom:link href="http://localhost/wordpress/comments/feed/" rel="self" type="application/rss+xml" />
-	<link>http://mark-stephen-maduro.github.io/portfolio</link>
+	<link>/.</link>
 	<description>Just another WordPress site</description>
 	<lastBuildDate>Fri, 14 May 2021 15:58:05 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,7 +20,7 @@
 	<item>
 		<title>
 		Comment on Hello world! by A WordPress Commenter		</title>
-		<link>http://mark-stephen-maduro.github.io/portfolio/2021/05/14/hello-world/#comment-1</link>
+		<link>/./2021/05/14/hello-world/#comment-1</link>
 
 		<dc:creator><![CDATA[A WordPress Commenter]]></dc:creator>
 		<pubDate>Fri, 14 May 2021 15:58:05 +0000</pubDate>
