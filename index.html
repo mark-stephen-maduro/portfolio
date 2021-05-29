@@ -1,1273 +1,334 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<title>user&#039;s Blog! &#8211; Just another WordPress site</title>
-	<meta name="robots" content="max-image-preview:large">
-	<link rel="dns-prefetch" href="//s.w.org">
-	<link rel="alternate" type="application/rss+xml" title="user&#039;s Blog! &raquo; Feed" href="./feed/">
-	<link rel="alternate" type="application/rss+xml" title="user&#039;s Blog! &raquo; Comments Feed"
-		href="./comments/feed/">
-	<script>
-		window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.2" } };
-		!function (e, a, t) { var n, r, o, i = a.createElement("canvas"), p = i.getContext && i.getContext("2d"); function s(e, t) { var a = String.fromCharCode; p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0); e = i.toDataURL(); return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL() } function c(e) { var t = a.createElement("script"); t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t) } for (o = Array("flag", "emoji"), t.supports = { everything: !0, everythingExceptFlag: !0 }, r = 0; r < o.length; r++)t.supports[o[r]] = function (e) { if (!p || !p.fillText) return !1; switch (p.textBaseline = "top", p.font = "600 32px Arial", e) { case "flag": return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]); case "emoji": return !s([55357, 56424, 8205, 55356, 57212], [55357, 56424, 8203, 55356, 57212]) }return !1 }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]); t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function () { t.DOMReady = !0 }, t.supports.everything || (n = function () { t.readyCallback() }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () { "complete" === a.readyState && t.readyCallback() })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji))) }(window, document, window._wpemojiSettings);
-	</script>
-	<style>
-		img.wp-smiley,
-		img.emoji {
-			display: inline !important;
-			border: none !important;
-			box-shadow: none !important;
-			height: 1em !important;
-			width: 1em !important;
-			margin: 0 .07em !important;
-			vertical-align: -0.1em !important;
-			background: none !important;
-			padding: 0 !important;
-		}
-	</style>
-	<link rel="stylesheet" id="wp-block-library-css" href="./wp-includes/css/dist/block-library/style.min.css?ver=5.7.2"
-		media="all">
-	<link rel="stylesheet" id="wp-block-library-theme-css"
-		href="./wp-includes/css/dist/block-library/theme.min.css?ver=5.7.2" media="all">
-	<link rel="stylesheet" id="rs-plugin-settings-css"
-		href="./wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.4.5" media="all">
-	<style id="rs-plugin-settings-inline-css">
-		#rs-demo-id {}
-	</style>
-	<link rel="stylesheet" id="twenty-twenty-one-style-css" href="./wp-content/themes/twentytwentyone/style.css?ver=1.3"
-		media="all">
-	<link rel="stylesheet" id="twenty-twenty-one-print-style-css"
-		href="./wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.3" media="print">
-	<link rel="stylesheet" id="elementor-icons-css"
-		href="./wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.11.0" media="all">
-	<link rel="stylesheet" id="elementor-animations-css"
-		href="./wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.2.3" media="all">
-	<link rel="stylesheet" id="elementor-frontend-css"
-		href="./wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.2.3" media="all">
-	<style id="elementor-frontend-inline-css">
-		@font-face {
-			font-family: eicons;
-			src: url(./wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0);
-			src: url(./wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0#iefix) format("embedded-opentype"), url(./wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.10.0) format("woff2"), url(./wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.10.0) format("woff"), url(./wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.10.0) format("truetype"), url(./wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.10.0#eicon) format("svg");
-			font-weight: 400;
-			font-style: normal
-		}
-	</style>
-	<link rel="stylesheet" id="elementor-post-8-css" href="./wp-content/uploads/elementor/css/post-8.css?ver=1621009946"
-		media="all">
-	<link rel="stylesheet" id="elementor-pro-css"
-		href="./wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=3.2.2" media="all">
-	<link rel="stylesheet" id="elementor-global-css" href="./wp-content/uploads/elementor/css/global.css?ver=1622212292"
-		media="all">
-	<link rel="stylesheet" id="elementor-post-1954-css"
-		href="./wp-content/uploads/elementor/css/post-1954.css?ver=1622300340" media="all">
-	<link rel="stylesheet" id="google-fonts-1-css"
-		href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=5.7.2"
-		media="all">
-	<script src="./wp-includes/js/jquery/jquery.min.js?ver=3.5.1" id="jquery-core-js"></script>
-	<script src="./wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
-	<script src="./wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.4.4" id="tp-tools-js"></script>
-	<script src="./wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.4.5" id="revmin-js"></script>
-	<link rel="https://api.w.org/" href="./wp-json/">
-	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="./xmlrpc.php?rsd">
-	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./wp-includes/wlwmanifest.xml">
-	<meta name="generator" content="WordPress 5.7.2">
-	<style>
-		.recentcomments a {
-			display: inline !important;
-			padding: 0 !important;
-			margin: 0 !important;
-		}
-	</style>
-	<meta name="generator"
-		content="Powered by Slider Revolution 6.4.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
-	<script type="text/javascript">function setREVStartSize(e) {
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">		<title>user&#039;s Blog! &#8211; Just another WordPress site</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="user&#039;s Blog! &raquo; Feed" href="/./feed/">
+<link rel="alternate" type="application/rss+xml" title="user&#039;s Blog! &raquo; Comments Feed" href="/./comments/feed/">
+		<script>
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style>img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/./wp-includes/css/dist/block-library/style.min.css?ver=5.7.2" media="all">
+<link rel="stylesheet" id="wp-block-library-theme-css" href="/./wp-includes/css/dist/block-library/theme.min.css?ver=5.7.2" media="all">
+<link rel="stylesheet" id="rs-plugin-settings-css" href="/./wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.4.5" media="all">
+<style id="rs-plugin-settings-inline-css">#rs-demo-id {}</style>
+<link rel="stylesheet" id="twenty-twenty-one-style-css" href="/./wp-content/themes/twentytwentyone/style.css?ver=1.3" media="all">
+<link rel="stylesheet" id="twenty-twenty-one-print-style-css" href="/./wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.3" media="print">
+<link rel="stylesheet" id="elementor-icons-css" href="/./wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.11.0" media="all">
+<link rel="stylesheet" id="elementor-animations-css" href="/./wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.2.3" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="/./wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.2.3" media="all">
+<style id="elementor-frontend-inline-css">@font-face{font-family:eicons;src:url(/./wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0);src:url(/./wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0#iefix) format("embedded-opentype"),url(/./wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.10.0) format("woff2"),url(/./wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.10.0) format("woff"),url(/./wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.10.0) format("truetype"),url(/./wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.10.0#eicon) format("svg");font-weight:400;font-style:normal}</style>
+<link rel="stylesheet" id="elementor-post-8-css" href="/./wp-content/uploads/elementor/css/post-8.css?ver=1621009946" media="all">
+<link rel="stylesheet" id="elementor-pro-css" href="/./wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=3.2.2" media="all">
+<link rel="stylesheet" id="elementor-global-css" href="/./wp-content/uploads/elementor/css/global.css?ver=1622212292" media="all">
+<link rel="stylesheet" id="elementor-post-1954-css" href="/./wp-content/uploads/elementor/css/post-1954.css?ver=1622300340" media="all">
+<link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=5.7.2" media="all">
+<script src="/./wp-includes/js/jquery/jquery.min.js?ver=3.5.1" id="jquery-core-js"></script>
+<script src="/./wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script src="/./wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.4.4" id="tp-tools-js"></script>
+<script src="/./wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.4.5" id="revmin-js"></script>
+<link rel="https://api.w.org/" href="/./wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/./xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/./wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.7.2">
+<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<meta name="generator" content="Powered by Slider Revolution 6.4.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+<script type="text/javascript">function setREVStartSize(e){
 			//window.requestAnimationFrame(function() {				 
-			window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
-			window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
-			try {
-				var pw = document.getElementById(e.c).parentNode.offsetWidth,
-					newh;
-				pw = pw === 0 || isNaN(pw) ? window.RSIW : pw;
-				e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
-				e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
-				e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
-				e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
-				e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
-				e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
-				e.mh = e.mh === undefined || e.mh == "" || e.mh === "auto" ? 0 : parseInt(e.mh, 0);
-				if (e.layout === "fullscreen" || e.l === "fullscreen")
-					newh = Math.max(e.mh, window.RSIH);
-				else {
-					e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
-					for (var i in e.rl) if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
-					e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
-					e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
-					for (var i in e.rl) if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
-
-					var nl = new Array(e.rl.length),
-						ix = 0,
-						sl;
-					e.tabw = e.tabhide >= pw ? 0 : e.tabw;
-					e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
-					e.tabh = e.tabhide >= pw ? 0 : e.tabh;
-					e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
-					for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
-					sl = nl[0];
-					for (var i in nl) if (sl > nl[i] && nl[i] > 0) { sl = nl[i]; ix = i; }
-					var m = pw > (e.gw[ix] + e.tabw + e.thumbw) ? 1 : (pw - (e.tabw + e.thumbw)) / (e.gw[ix]);
-					newh = (e.gh[ix] * m) + (e.tabh + e.thumbh);
-				}
-				if (window.rs_init_css === undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));
-				document.getElementById(e.c).height = newh + "px";
-				window.rs_init_css.innerHTML += "#" + e.c + "_wrapper { height: " + newh + "px }";
-			} catch (e) {
-				console.log("Failure at Presize of Slider:" + e)
-			}
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;	
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;	
+				try {								
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);		
+					if(e.layout==="fullscreen" || e.l==="fullscreen") 						
+						newh = Math.max(e.mh,window.RSIH);					
+					else{					
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];					
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,						
+							sl;					
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;					
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];									
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}															
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);					
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}				
+					if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));					
+					document.getElementById(e.c).height = newh+"px";
+					window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }";				
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}					   
 			//});
-		};</script>
+		  };</script>
 </head>
-
 <body class="home wp-embed-responsive is-light-theme no-js hfeed elementor-default elementor-kit-8">
 
-	<div data-elementor-type="header" data-elementor-id="1954"
-		class="elementor elementor-1954 elementor-location-header" data-elementor-settings="[]">
+		<div data-elementor-type="header" data-elementor-id="1954" class="elementor elementor-1954 elementor-location-header" data-elementor-settings="[]">
 		<div class="elementor-section-wrap">
-			<section
-				class="elementor-section elementor-top-section elementor-element elementor-element-1a3b55c elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-				data-id="1a3b55c" data-element_type="section">
-				<div class="elementor-container elementor-column-gap-no">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-56ddc62"
-						data-id="56ddc62" data-element_type="column">
-						<div class="elementor-widget-wrap elementor-element-populated">
-							<div class="elementor-element elementor-element-a99967c elementor-widget elementor-widget-slider_revolution"
-								data-id="a99967c" data-element_type="widget"
-								data-widget_type="slider_revolution.default">
-								<div class="elementor-widget-container">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-1a3b55c elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="1a3b55c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-56ddc62" data-id="56ddc62" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a99967c elementor-widget elementor-widget-slider_revolution" data-id="a99967c" data-element_type="widget" data-widget_type="slider_revolution.default">
+				<div class="elementor-widget-container">
+			
+		<div class="wp-block-themepunch-revslider">
+			<!-- START Portfolio Header Menu REVOLUTION SLIDER 6.4.5 --><p class="rs-p-wp-fix"></p>
+			<rs-module-wrap id="header_wrapper" data-source="gallery" style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;position:fixed;top:0px;height:0px">
+				<rs-module id="header" style="" data-version="6.4.5">
+					<rs-slides>
+						<rs-slide data-key="rs-2032" data-title="Slide" data-anim="ms:500ms;" data-in="o:0;" data-out="a:false;">
+							<img src="/./wp-content/plugins/revslider/public/assets/assets/transparent.png" alt="Slide" title="Home" class="rev-slidebg tp-rs-img" data-no-retina>
+<!--
+							--><rs-group id="slider-936-slide-2032-layer-6" data-type="group" data-bsh="c:rgba(0,0,0,0.35);v:25px;b:75px;" data-xy="x:r;" data-dim="w:580px,100%,100%,100%;h:270px,430px,430px,350px;" data-vbility="f,t,t,t" data-actions="o:mouseleave;a:stoplayer;layer:slider-936-slide-2032-layer-6;" data-basealign="slide" data-rsp_o="off" data-rsp_bd="off" data-border="boc:rgba(255, 255, 255, 0.1);bow:1px,0,0,0;bor:0,0,0,0px;" data-clip="u:true;o:t;" data-frame_0="o:1;cp:0%;" data-frame_1="e:power4.out;st:a;sp:500;sR:1000;sA:1000;" data-frame_999="y:0px;o:1;e:power4.out;st:a;sp:500;sR:7500;cp:0%;sA:9000;" style="z-index:13;background-color:#1b262a;"><rs-bg-elem style="background: url('/wp-content/uploads/2021/05/download.png') no-repeat center center; background-size: cover;"></rs-bg-elem>
+<!--
+								--><rs-layer id="slider-936-slide-2032-layer-8" data-type="text" data-xy="x:l,l,c,c;xo:50px,50px,-110px,-80px;yo:95px,80px,80px,102px;" data-text="s:16,20,20,20;ls:0,-1px,-1px,-1px;fw:400,700,700,700;" data-dim="w:auto,auto,160px,150px;" data-actions="id:about;o:click;a:scrollto;offset:-55px;sp:1000ms;e:power1.inOut;||o:click;a:togglelayer;layer:slider-936-slide-2032-layer-6;||o:click;a:simulateclick;layer:slider-936-slide-2032-layer-0;" data-rsp_o="off" data-rsp_bd="off" data-border="boc:rgba(255, 255, 255, 0);bow:0,0,1px,0;" data-frame_0="o:1;" data-frame_1="st:1000;sp:500;" data-frame_999="st:w;sR:7500;" data-frame_hover="c:#fb6645;boc:#fff;bos:none;bow:0,0,1px,0;sp:200ms;e:power1.inOut;" style="z-index:9;font-family:Hind;cursor:pointer;">About 
+								</rs-layer><!--
 
-									<div class="wp-block-themepunch-revslider">
-										<!-- START Portfolio Header Menu REVOLUTION SLIDER 6.4.5 -->
-										<p class="rs-p-wp-fix"></p>
-										<rs-module-wrap id="header_wrapper" data-source="gallery"
-											style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;position:fixed;top:0px;height:0px">
-											<rs-module id="header" style="" data-version="6.4.5">
-												<rs-slides>
-													<rs-slide data-key="rs-2032" data-title="Slide"
-														data-anim="ms:500ms;" data-in="o:0;" data-out="a:false;">
-														<img src="./wp-content/plugins/revslider/public/assets/assets/transparent.png"
-															alt="Slide" title="Home" class="rev-slidebg tp-rs-img"
-															data-no-retina>
-														<!--
-							-->
-														<rs-group id="slider-936-slide-2032-layer-6" data-type="group"
-															data-bsh="c:rgba(0,0,0,0.35);v:25px;b:75px;" data-xy="x:r;"
-															data-dim="w:580px,100%,100%,100%;h:270px,430px,430px,350px;"
-															data-vbility="f,t,t,t"
-															data-actions="o:mouseleave;a:stoplayer;layer:slider-936-slide-2032-layer-6;"
-															data-basealign="slide" data-rsp_o="off" data-rsp_bd="off"
-															data-border="boc:rgba(255, 255, 255, 0.1);bow:1px,0,0,0;bor:0,0,0,0px;"
-															data-clip="u:true;o:t;" data-frame_0="o:1;cp:0%;"
-															data-frame_1="e:power4.out;st:a;sp:500;sR:1000;sA:1000;"
-															data-frame_999="y:0px;o:1;e:power4.out;st:a;sp:500;sR:7500;cp:0%;sA:9000;"
-															style="z-index:13;background-color:#1b262a;">
-															<rs-bg-elem
-																style="background: url('/wp-content/uploads/2021/05/download.png') no-repeat center center; background-size: cover;">
-															</rs-bg-elem>
-															<!--
-								-->
-															<rs-layer id="slider-936-slide-2032-layer-8"
-																data-type="text"
-																data-xy="x:l,l,c,c;xo:50px,50px,-110px,-80px;yo:95px,80px,80px,102px;"
-																data-text="s:16,20,20,20;ls:0,-1px,-1px,-1px;fw:400,700,700,700;"
-																data-dim="w:auto,auto,160px,150px;"
-																data-actions="id:about;o:click;a:scrollto;offset:-55px;sp:1000ms;e:power1.inOut;||o:click;a:togglelayer;layer:slider-936-slide-2032-layer-6;||o:click;a:simulateclick;layer:slider-936-slide-2032-layer-0;"
-																data-rsp_o="off" data-rsp_bd="off"
-																data-border="boc:rgba(255, 255, 255, 0);bow:0,0,1px,0;"
-																data-frame_0="o:1;" data-frame_1="st:1000;sp:500;"
-																data-frame_999="st:w;sR:7500;"
-																data-frame_hover="c:#fb6645;boc:#fff;bos:none;bow:0,0,1px,0;sp:200ms;e:power1.inOut;"
-																style="z-index:9;font-family:Hind;cursor:pointer;">About
-															</rs-layer>
-															<!--
+								--><rs-layer id="slider-936-slide-2032-layer-9" data-type="text" data-xy="x:l,l,c,c;xo:50px,50px,-110px,-80px;yo:130px,130px,130px,142px;" data-text="s:16,20,20,20;ls:0,-1px,-1px,-1px;fw:400,700,700,700;" data-dim="w:auto,auto,160px,150px;" data-actions="id:portfolio;o:click;a:scrollto;offset:-55px;sp:1000ms;e:power1.inOut;||o:click;a:togglelayer;layer:slider-936-slide-2032-layer-6;||o:click;a:simulateclick;layer:slider-936-slide-2032-layer-0;" data-rsp_o="off" data-rsp_bd="off" data-border="boc:rgba(255, 255, 255, 0);bow:0,0,1px,0;" data-frame_0="o:1;" data-frame_1="st:1050;sp:500;sR:50;" data-frame_999="st:w;sR:7450;" data-frame_hover="c:#fb6645;boc:#fff;bos:none;bow:0,0,1px,0;sp:200ms;e:power1.inOut;" style="z-index:10;font-family:Hind;cursor:pointer;">Projects 
+								</rs-layer><!--
 
-								-->
-															<rs-layer id="slider-936-slide-2032-layer-9"
-																data-type="text"
-																data-xy="x:l,l,c,c;xo:50px,50px,-110px,-80px;yo:130px,130px,130px,142px;"
-																data-text="s:16,20,20,20;ls:0,-1px,-1px,-1px;fw:400,700,700,700;"
-																data-dim="w:auto,auto,160px,150px;"
-																data-actions="id:portfolio;o:click;a:scrollto;offset:-55px;sp:1000ms;e:power1.inOut;||o:click;a:togglelayer;layer:slider-936-slide-2032-layer-6;||o:click;a:simulateclick;layer:slider-936-slide-2032-layer-0;"
-																data-rsp_o="off" data-rsp_bd="off"
-																data-border="boc:rgba(255, 255, 255, 0);bow:0,0,1px,0;"
-																data-frame_0="o:1;" data-frame_1="st:1050;sp:500;sR:50;"
-																data-frame_999="st:w;sR:7450;"
-																data-frame_hover="c:#fb6645;boc:#fff;bos:none;bow:0,0,1px,0;sp:200ms;e:power1.inOut;"
-																style="z-index:10;font-family:Hind;cursor:pointer;">
-																Projects
-															</rs-layer>
-															<!--
+								--><rs-layer id="slider-936-slide-2032-layer-10" data-type="text" data-xy="x:l,l,c,c;xo:50px,50px,-110px,-80px;yo:165px,180px,180px,182px;" data-text="s:16,20,20,20;ls:0,-1px,-1px,-1px;fw:400,700,700,700;" data-dim="w:auto,auto,160px,150px;" data-actions="id:news;o:click;a:scrollto;offset:-55px;sp:1000ms;e:power1.inOut;||o:click;a:togglelayer;layer:slider-936-slide-2032-layer-6;||o:click;a:simulateclick;layer:slider-936-slide-2032-layer-0;" data-rsp_o="off" data-rsp_bd="off" data-border="boc:rgba(255, 255, 255, 0);bow:0,0,1px,0;" data-frame_0="o:1;" data-frame_1="st:1100;sp:500;sR:100;" data-frame_999="st:w;sR:7400;" data-frame_hover="c:#fb6645;boc:#fff;bos:none;bow:0,0,1px,0;sp:200ms;e:power1.inOut;" style="z-index:11;font-family:Hind;cursor:pointer;">Contact 
+								</rs-layer><!--
+							--></rs-group><!--
 
-								-->
-															<rs-layer id="slider-936-slide-2032-layer-10"
-																data-type="text"
-																data-xy="x:l,l,c,c;xo:50px,50px,-110px,-80px;yo:165px,180px,180px,182px;"
-																data-text="s:16,20,20,20;ls:0,-1px,-1px,-1px;fw:400,700,700,700;"
-																data-dim="w:auto,auto,160px,150px;"
-																data-actions="id:news;o:click;a:scrollto;offset:-55px;sp:1000ms;e:power1.inOut;||o:click;a:togglelayer;layer:slider-936-slide-2032-layer-6;||o:click;a:simulateclick;layer:slider-936-slide-2032-layer-0;"
-																data-rsp_o="off" data-rsp_bd="off"
-																data-border="boc:rgba(255, 255, 255, 0);bow:0,0,1px,0;"
-																data-frame_0="o:1;"
-																data-frame_1="st:1100;sp:500;sR:100;"
-																data-frame_999="st:w;sR:7400;"
-																data-frame_hover="c:#fb6645;boc:#fff;bos:none;bow:0,0,1px,0;sp:200ms;e:power1.inOut;"
-																style="z-index:11;font-family:Hind;cursor:pointer;">
-																Contact
-															</rs-layer>
-															<!--
-							-->
-														</rs-group>
-														<!--
+							--><rs-group id="slider-936-slide-2032-layer-25" data-type="group" data-xy="x:l,c,c,c;xo:10px,0,0,0;yo:0,0,0,15px;" data-text="w:normal;s:20,20,15,9;l:0,0,18,11;" data-dim="w:132px,135px,102px,118px;h:70px,71px,53px,32px;" data-rsp_bd="off" data-frame_0="o:1;" data-frame_999="o:0;st:w;sR:8700;sA:9000;" style="z-index:21;"><!--
+								--><rs-layer id="slider-936-slide-2032-layer-24" data-type="text" data-xy="y:m;" data-text="w:normal;s:30,30,22,25;l:25,25,18,11;ls:-2px,-2px,-1px,-1px;" data-actions="id:welcome;o:click;a:scrollto;sp:1000ms;e:power1.inOut;" data-rsp_bd="off" data-frame_999="o:0;st:w;sR:8700;" data-frame_hover="c:#fb6645;" style="z-index:19;font-family:Mr Dafoe;cursor:pointer;">Mark Stephen 
+								</rs-layer><!--
 
-							-->
-														<rs-group id="slider-936-slide-2032-layer-25" data-type="group"
-															data-xy="x:l,c,c,c;xo:10px,0,0,0;yo:0,0,0,15px;"
-															data-text="w:normal;s:20,20,15,9;l:0,0,18,11;"
-															data-dim="w:132px,135px,102px,118px;h:70px,71px,53px,32px;"
-															data-rsp_bd="off" data-frame_0="o:1;"
-															data-frame_999="o:0;st:w;sR:8700;sA:9000;"
-															style="z-index:21;">
-															<!--
-								-->
-															<rs-layer id="slider-936-slide-2032-layer-24"
-																data-type="text" data-xy="y:m;"
-																data-text="w:normal;s:30,30,22,25;l:25,25,18,11;ls:-2px,-2px,-1px,-1px;"
-																data-actions="id:welcome;o:click;a:scrollto;sp:1000ms;e:power1.inOut;"
-																data-rsp_bd="off" data-frame_999="o:0;st:w;sR:8700;"
-																data-frame_hover="c:#fb6645;"
-																style="z-index:19;font-family:Mr Dafoe;cursor:pointer;">
-																Mark Stephen
-															</rs-layer>
-															<!--
+								--><rs-layer id="slider-936-slide-2032-layer-27" data-type="shape" data-xy="x:l,l,l,r;yo:50px,60px,45px,30px;" data-text="w:normal;s:20,20,15,9;l:0,0,18,11;" data-dim="w:100%;h:3px,3px,2px,2px;" data-rsp_bd="off" data-frame_0="x:-100%;o:1;" data-frame_0_mask="u:t;" data-frame_1="st:1500;sp:1000;sR:1500;" data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:6500;" style="z-index:20;background-color:#fb6645;"> 
+								</rs-layer><!--
+							--></rs-group><!--
 
-								-->
-															<rs-layer id="slider-936-slide-2032-layer-27"
-																data-type="shape"
-																data-xy="x:l,l,l,r;yo:50px,60px,45px,30px;"
-																data-text="w:normal;s:20,20,15,9;l:0,0,18,11;"
-																data-dim="w:100%;h:3px,3px,2px,2px;" data-rsp_bd="off"
-																data-frame_0="x:-100%;o:1;" data-frame_0_mask="u:t;"
-																data-frame_1="st:1500;sp:1000;sR:1500;"
-																data-frame_1_mask="u:t;"
-																data-frame_999="o:0;st:w;sR:6500;"
-																style="z-index:20;background-color:#fb6645;">
-															</rs-layer>
-															<!--
-							-->
-														</rs-group>
-														<!--
+							--><rs-layer id="slider-936-slide-2032-layer-0" class="menutoggle" data-type="text" data-bsh="c:rgba(0,0,0,0.15);v:10px;b:0,0,20px,20px;" data-xy="x:r;xo:0,20px,10px,10px;y:b,t,t,t;yo:0,20px,10px,10px;" data-text="s:34,34,25,25;l:34;a:left,left,center,center;" data-dim="w:auto,auto,34px,34px;h:auto,auto,34px,34px;" data-vbility="f,t,t,t" data-actions="o:click;a:togglelayer;layer:slider-936-slide-2032-layer-6;" data-basealign="slide" data-rsp_o="off" data-wrpcls="menutoggle" data-rsp_bd="off" data-border="bor:2px,2px,2px,2px;" data-frame_0="y:-50px;" data-frame_1="st:1000;sp:500;sR:1000;" data-frame_999="st:w;sR:7500;" data-frame_hover="bgc:#fb6645;bor:0,0,0,0;e:power1.inOut;bri:110%;" style="z-index:18;background-color:#fb6645;font-family:Roboto;cursor:pointer;">
+								<div class="rs-untoggled-content">
+<i class="material-icons">menu</i> </div>
+								<div class="rs-toggled-content"><i class="material-icons">close</i></div>
+							</rs-layer><!--
 
-							-->
-														<rs-layer id="slider-936-slide-2032-layer-0" class="menutoggle"
-															data-type="text"
-															data-bsh="c:rgba(0,0,0,0.15);v:10px;b:0,0,20px,20px;"
-															data-xy="x:r;xo:0,20px,10px,10px;y:b,t,t,t;yo:0,20px,10px,10px;"
-															data-text="s:34,34,25,25;l:34;a:left,left,center,center;"
-															data-dim="w:auto,auto,34px,34px;h:auto,auto,34px,34px;"
-															data-vbility="f,t,t,t"
-															data-actions="o:click;a:togglelayer;layer:slider-936-slide-2032-layer-6;"
-															data-basealign="slide" data-rsp_o="off"
-															data-wrpcls="menutoggle" data-rsp_bd="off"
-															data-border="bor:2px,2px,2px,2px;" data-frame_0="y:-50px;"
-															data-frame_1="st:1000;sp:500;sR:1000;"
-															data-frame_999="st:w;sR:7500;"
-															data-frame_hover="bgc:#fb6645;bor:0,0,0,0;e:power1.inOut;bri:110%;"
-															style="z-index:18;background-color:#fb6645;font-family:Roboto;cursor:pointer;">
-															<div class="rs-untoggled-content">
-																<i class="material-icons">menu</i>
-															</div>
-															<div class="rs-toggled-content"><i
-																	class="material-icons">close</i></div>
-														</rs-layer>
-														<!--
+							--><rs-layer id="slider-936-slide-2032-layer-21" data-type="text" data-xy="x:r;xo:210px,253px,253px,253px;yo:20px,30px,30px,30px;" data-text="l:34;ls:-1px;fw:600;" data-vbility="t,f,f,f" data-actions="id:store;o:click;a:scrollto;offset:-70px;sp:1000ms;e:power1.inOut;" data-rsp_o="off" data-rsp_bd="off" data-padding="r:10;l:10;" data-frame_0="o:1;blu:5px;c:#fb6645;" data-frame_0_chars="d:5;o:0;blu:5px;" data-frame_1="st:1000;sp:750;sR:1000;" data-frame_1_chars="d:5;" data-frame_999="st:w;sR:7000;" data-frame_hover="c:#fb6645;boc:#fb6645;bos:solid;bow:0,0,5px,0;td:underline;sp:100ms;e:power1.inOut;" style="z-index:15;font-family:Hind;cursor:pointer;">About 
+							</rs-layer><!--
 
-							-->
-														<rs-layer id="slider-936-slide-2032-layer-21" data-type="text"
-															data-xy="x:r;xo:210px,253px,253px,253px;yo:20px,30px,30px,30px;"
-															data-text="l:34;ls:-1px;fw:600;" data-vbility="t,f,f,f"
-															data-actions="id:store;o:click;a:scrollto;offset:-70px;sp:1000ms;e:power1.inOut;"
-															data-rsp_o="off" data-rsp_bd="off" data-padding="r:10;l:10;"
-															data-frame_0="o:1;blu:5px;c:#fb6645;"
-															data-frame_0_chars="d:5;o:0;blu:5px;"
-															data-frame_1="st:1000;sp:750;sR:1000;"
-															data-frame_1_chars="d:5;" data-frame_999="st:w;sR:7000;"
-															data-frame_hover="c:#fb6645;boc:#fb6645;bos:solid;bow:0,0,5px,0;td:underline;sp:100ms;e:power1.inOut;"
-															style="z-index:15;font-family:Hind;cursor:pointer;">About
-														</rs-layer>
-														<!--
+							--><rs-layer id="slider-936-slide-2032-layer-22" data-type="text" data-xy="x:r;xo:100px,253px,253px,253px;yo:20px,30px,30px,30px;" data-text="l:34;ls:-1px;fw:600;" data-vbility="t,f,f,f" data-actions="id:team;o:click;a:scrollto;offset:-70px;sp:1000ms;e:power1.inOut;" data-rsp_o="off" data-rsp_bd="off" data-padding="r:10;l:10;" data-frame_0="o:1;blu:5px;c:#fb6645;" data-frame_0_chars="d:5;o:0;blu:5px;" data-frame_1="st:1000;sp:750;sR:1000;" data-frame_1_chars="d:5;" data-frame_999="st:w;sR:7000;" data-frame_hover="c:#fb6645;boc:#fb6645;bos:solid;bow:0,0,5px,0;td:underline;sp:100ms;e:power1.inOut;" style="z-index:16;font-family:Hind;cursor:pointer;">Projects
+ 
+							</rs-layer><!--
 
-							-->
-														<rs-layer id="slider-936-slide-2032-layer-22" data-type="text"
-															data-xy="x:r;xo:100px,253px,253px,253px;yo:20px,30px,30px,30px;"
-															data-text="l:34;ls:-1px;fw:600;" data-vbility="t,f,f,f"
-															data-actions="id:team;o:click;a:scrollto;offset:-70px;sp:1000ms;e:power1.inOut;"
-															data-rsp_o="off" data-rsp_bd="off" data-padding="r:10;l:10;"
-															data-frame_0="o:1;blu:5px;c:#fb6645;"
-															data-frame_0_chars="d:5;o:0;blu:5px;"
-															data-frame_1="st:1000;sp:750;sR:1000;"
-															data-frame_1_chars="d:5;" data-frame_999="st:w;sR:7000;"
-															data-frame_hover="c:#fb6645;boc:#fb6645;bos:solid;bow:0,0,5px,0;td:underline;sp:100ms;e:power1.inOut;"
-															style="z-index:16;font-family:Hind;cursor:pointer;">Projects
+							--><rs-layer id="slider-936-slide-2032-layer-23" data-type="text" data-xy="x:r;xo:0,253px,253px,253px;yo:20px,30px,30px,30px;" data-text="l:34;ls:-1px;fw:600;" data-vbility="t,f,f,f" data-actions="id:contacts;o:click;a:scrollto;offset:-70px;sp:1000ms;e:power1.inOut;" data-rsp_o="off" data-rsp_bd="off" data-padding="r:10;l:10;" data-frame_0="o:1;blu:5px;c:#fb6645;" data-frame_0_chars="d:5;o:0;blu:5px;" data-frame_1="st:1000;sp:750;sR:1000;" data-frame_1_chars="d:5;" data-frame_999="st:w;sR:7000;" data-frame_hover="c:#fb6645;boc:#fb6645;bos:solid;bow:0,0,5px,0;td:underline;sp:100ms;e:power1.inOut;" style="z-index:17;font-family:Hind;cursor:pointer;">Contacts 
+							</rs-layer><!--
 
-														</rs-layer>
-														<!--
+							--><rs-layer id="slider-936-slide-2032-layer-26" data-type="shape" data-text="w:normal;s:20,20,15,9;l:0,0,18,11;" data-dim="w:100%;h:70px,71px,53px,55px;" data-basealign="slide" data-rsp_bd="off" data-sba="t:true;" data-frame_0="y:top;" data-frame_1="sp:1000;" data-frame_999="o:0;st:w;sR:8000;" style="z-index:14;background-color:#1b262a;"> 
+							</rs-layer><!--
+-->						</rs-slide>
+					</rs-slides>
+				</rs-module>
+				<script type="text/javascript">
+					setREVStartSize({c: 'header',rl:[1240,1024,778,480],el:[900,768,960,720],gw:[1000,1024,778,480],gh:[900,768,960,720],type:'hero',justify:'',layout:'fullwidth',mh:"0"});
+					var	revapi936,
+						tpj;
+					function revinit_header() {
+					jQuery(function() {
+						tpj = jQuery;
+						revapi936 = tpj("#header");
+						if(revapi936==undefined || revapi936.revolution == undefined){
+							revslider_showDoubleJqueryError("header");
+						}else{
+							revapi936.revolution({
+								sliderType:"hero",
+								sliderLayout:"fullwidth",
+								visibilityLevels:"1240,1024,778,480",
+								gridwidth:"1000,1024,778,480",
+								gridheight:"900,768,960,720",
+								fixedOnTop:true,
+								forceOverflow:true,
+								maxHeight:"90px",
+								perspective:600,
+								perspectiveType:"local",
+								editorheight:"900,768,960,720",
+								responsiveLevels:"1240,1024,778,480",
+								progressBar:{disableProgressBar:true},
+								navigation: {
+									onHoverStop:false
+								},
+								sbtimeline: {
+									set:true
+								},
+								fallbacks: {
+									allowHTML5AutoPlayOnAndroid:true
+								},
+							});
+						}
+						
+					});
+					} // End of RevInitScript
+				var once_header = false;
+				if (document.readyState === "loading") {document.addEventListener('readystatechange',function() { if((document.readyState === "interactive" || document.readyState === "complete") && !once_header ) { once_header = true; revinit_header();}});} else {once_header = true; revinit_header();}
+				</script>
+				<script>
+					var htmlDivCss = unescape("%2F%2A%20%0D%0AICON%20SET%20%0D%0A%2A%2F%0D%0A%40font-face%20%7B%0D%0A%20%20font-family%3A%20%27Material%20Icons%27%3B%0D%0A%20%20font-style%3A%20normal%3B%0D%0A%20%20font-weight%3A%20400%3B%20%20%0D%0A%20%20src%3A%20url%28%2F%2Ffonts.gstatic.com%2Fs%2Fmaterialicons%2Fv41%2FflUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2%29%20format%28%27woff2%27%29%3B%0D%0A%7D%0D%0A%0D%0Ars-module%20.material-icons%20%7B%0D%0A%20%20font-family%3A%20%27Material%20Icons%27%3B%0D%0A%20%20font-weight%3A%20normal%3B%0D%0A%20%20font-style%3A%20normal%3B%0D%0A%09font-size%3A%20inherit%3B%0D%0A%20%20display%3A%20inline-block%3B%20%20%0D%0A%20%20text-transform%3A%20none%3B%0D%0A%20%20letter-spacing%3A%20normal%3B%0D%0A%20%20word-wrap%3A%20normal%3B%0D%0A%20%20white-space%3A%20nowrap%3B%0D%0A%20%20direction%3A%20ltr%3B%0D%0A%20%20vertical-align%3A%20top%3B%0D%0A%20%20line-height%3A%20inherit%3B%0D%0A%20%20%2F%2A%20Support%20for%20IE.%20%2A%2F%0D%0A%20%20font-feature-settings%3A%20%27liga%27%3B%0D%0A%0D%0A%20%20-webkit-font-smoothing%3A%20antialiased%3B%0D%0A%20%20text-rendering%3A%20optimizeLegibility%3B%0D%0A%20%20-moz-osx-font-smoothing%3A%20grayscale%3B%0D%0A%7D");
+					var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+					if(htmlDiv) {
+						htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+					}else{
+						var htmlDiv = document.createElement('div');
+						htmlDiv.innerHTML = '<style>' + htmlDivCss + '<\/style>';
+						document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+					}
+				</script>
+			</rs-module-wrap>
+			<!-- END REVOLUTION SLIDER -->
+</div>
 
-							-->
-														<rs-layer id="slider-936-slide-2032-layer-23" data-type="text"
-															data-xy="x:r;xo:0,253px,253px,253px;yo:20px,30px,30px,30px;"
-															data-text="l:34;ls:-1px;fw:600;" data-vbility="t,f,f,f"
-															data-actions="id:contacts;o:click;a:scrollto;offset:-70px;sp:1000ms;e:power1.inOut;"
-															data-rsp_o="off" data-rsp_bd="off" data-padding="r:10;l:10;"
-															data-frame_0="o:1;blu:5px;c:#fb6645;"
-															data-frame_0_chars="d:5;o:0;blu:5px;"
-															data-frame_1="st:1000;sp:750;sR:1000;"
-															data-frame_1_chars="d:5;" data-frame_999="st:w;sR:7000;"
-															data-frame_hover="c:#fb6645;boc:#fb6645;bos:solid;bow:0,0,5px,0;td:underline;sp:100ms;e:power1.inOut;"
-															style="z-index:17;font-family:Hind;cursor:pointer;">Contacts
-														</rs-layer>
-														<!--
-
-							-->
-														<rs-layer id="slider-936-slide-2032-layer-26" data-type="shape"
-															data-text="w:normal;s:20,20,15,9;l:0,0,18,11;"
-															data-dim="w:100%;h:70px,71px,53px,55px;"
-															data-basealign="slide" data-rsp_bd="off" data-sba="t:true;"
-															data-frame_0="y:top;" data-frame_1="sp:1000;"
-															data-frame_999="o:0;st:w;sR:8000;"
-															style="z-index:14;background-color:#1b262a;">
-														</rs-layer>
-														<!--
--->
-													</rs-slide>
-												</rs-slides>
-											</rs-module>
-											<script type="text/javascript">
-												setREVStartSize({ c: 'header', rl: [1240, 1024, 778, 480], el: [900, 768, 960, 720], gw: [1000, 1024, 778, 480], gh: [900, 768, 960, 720], type: 'hero', justify: '', layout: 'fullwidth', mh: "0" });
-												var revapi936,
-													tpj;
-												function revinit_header() {
-													jQuery(function () {
-														tpj = jQuery;
-														revapi936 = tpj("#header");
-														if (revapi936 == undefined || revapi936.revolution == undefined) {
-															revslider_showDoubleJqueryError("header");
-														} else {
-															revapi936.revolution({
-																sliderType: "hero",
-																sliderLayout: "fullwidth",
-																visibilityLevels: "1240,1024,778,480",
-																gridwidth: "1000,1024,778,480",
-																gridheight: "900,768,960,720",
-																fixedOnTop: true,
-																forceOverflow: true,
-																maxHeight: "90px",
-																perspective: 600,
-																perspectiveType: "local",
-																editorheight: "900,768,960,720",
-																responsiveLevels: "1240,1024,778,480",
-																progressBar: { disableProgressBar: true },
-																navigation: {
-																	onHoverStop: false
-																},
-																sbtimeline: {
-																	set: true
-																},
-																fallbacks: {
-																	allowHTML5AutoPlayOnAndroid: true
-																},
-															});
-														}
-
-													});
-												} // End of RevInitScript
-												var once_header = false;
-												if (document.readyState === "loading") { document.addEventListener('readystatechange', function () { if ((document.readyState === "interactive" || document.readyState === "complete") && !once_header) { once_header = true; revinit_header(); } }); } else { once_header = true; revinit_header(); }
-											</script>
-											<script>
-												var htmlDivCss = unescape("%2F%2A%20%0D%0AICON%20SET%20%0D%0A%2A%2F%0D%0A%40font-face%20%7B%0D%0A%20%20font-family%3A%20%27Material%20Icons%27%3B%0D%0A%20%20font-style%3A%20normal%3B%0D%0A%20%20font-weight%3A%20400%3B%20%20%0D%0A%20%20src%3A%20url%28%2F%2Ffonts.gstatic.com%2Fs%2Fmaterialicons%2Fv41%2FflUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2%29%20format%28%27woff2%27%29%3B%0D%0A%7D%0D%0A%0D%0Ars-module%20.material-icons%20%7B%0D%0A%20%20font-family%3A%20%27Material%20Icons%27%3B%0D%0A%20%20font-weight%3A%20normal%3B%0D%0A%20%20font-style%3A%20normal%3B%0D%0A%09font-size%3A%20inherit%3B%0D%0A%20%20display%3A%20inline-block%3B%20%20%0D%0A%20%20text-transform%3A%20none%3B%0D%0A%20%20letter-spacing%3A%20normal%3B%0D%0A%20%20word-wrap%3A%20normal%3B%0D%0A%20%20white-space%3A%20nowrap%3B%0D%0A%20%20direction%3A%20ltr%3B%0D%0A%20%20vertical-align%3A%20top%3B%0D%0A%20%20line-height%3A%20inherit%3B%0D%0A%20%20%2F%2A%20Support%20for%20IE.%20%2A%2F%0D%0A%20%20font-feature-settings%3A%20%27liga%27%3B%0D%0A%0D%0A%20%20-webkit-font-smoothing%3A%20antialiased%3B%0D%0A%20%20text-rendering%3A%20optimizeLegibility%3B%0D%0A%20%20-moz-osx-font-smoothing%3A%20grayscale%3B%0D%0A%7D");
-												var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
-												if (htmlDiv) {
-													htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
-												} else {
-													var htmlDiv = document.createElement('div');
-													htmlDiv.innerHTML = '<style>' + htmlDivCss + '<\/style>';
-													document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
-												}
-											</script>
-										</rs-module-wrap>
-										<!-- END REVOLUTION SLIDER -->
-									</div>
-
-								</div>
+				</div>
+				</div>
+					</div>
+		</div>
 							</div>
+		</section>
+				</div>
+		</div>
+		
+<article id="post-2" class="post-2 page type-page status-publish hentry entry">
+
+	
+	<div class="entry-content">
+				<div data-elementor-type="wp-page" data-elementor-id="2" class="elementor elementor-2" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-e07bf29 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="e07bf29" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-cc5b471" data-id="cc5b471" data-element_type="column">
+			<div class="elementor-widget-wrap">
+									</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2f79461 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="2f79461" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9be35d7" data-id="9be35d7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a7adbe2 elementor-widget elementor-widget-slider_revolution" data-id="a7adbe2" data-element_type="widget" data-widget_type="slider_revolution.default">
+				<div class="elementor-widget-container">
+			
+		<div class="wp-block-themepunch-revslider">
+			<!-- START Coming Soon AddOn REVOLUTION SLIDER 6.4.5 --><p class="rs-p-wp-fix"></p>
+			<rs-module-wrap id="rev_slider_589_2_wrapper" data-source="gallery" style="background:#222222;padding:0;">
+				<rs-module id="rev_slider_589_2" style="" data-version="6.4.5">
+					<rs-slides>
+						<rs-slide data-key="rs-1253" data-title="Slide" data-in="o:0;" data-out="a:false;">
+							<img src="/./wp-content/uploads/revslider/comingsoon1.jpg" title="Home" class="rev-slidebg tp-rs-img" data-panzoom="d:20000;ss:130;se:100;" data-no-retina>
+<!--
+							--><rs-layer id="slider-589-slide-1253-layer-2" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:100px,50px,50px,30px;yo:200px,150px,150px,120px;" data-text="s:100,100,100,70;l:100,100,100,70;ls:-5px;fw:700;a:inherit;" data-basealign="slide" data-frame_0="x:left;o:1;blu:20px;" data-frame_1="e:power4.out;st:400;sp:2000;sR:400;" data-frame_999="o:0;st:w;sR:6600;" style="z-index:6;font-family:Poppins;">LAUNCHING 
+							</rs-layer><!--
+
+							--><rs-layer id="slider-589-slide-1253-layer-3" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:100px,50px,50px,30px;yo:290px,240px,240px,190px;" data-text="s:100,100,100,70;l:100,100,100,70;ls:-5px;fw:300;a:inherit;" data-basealign="slide" data-frame_0="x:left;o:1;blu:20px;" data-frame_1="e:power4.out;st:500;sp:2000;sR:500;" data-frame_999="o:0;st:w;sR:6500;" style="z-index:7;font-family:Poppins;">VERY SOON. 
+							</rs-layer><!--
+
+							--><a id="slider-589-slide-1253-layer-16" class="rs-layer" href="https://www.facebook.com/Steeeephen/" target="_self" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:100px,50px,50px,30px;y:b;yo:100px,100px,50px,30px;" data-text="l:60;a:center;" data-dim="w:60px;h:60px;" data-basealign="slide" data-border="bos:solid;boc:rgba(255,255,255,1);bow:2px,2px,2px,2px;bor:50%,50%,50%,50%;" data-frame_0="y:50px;blu:20px;" data-frame_1="e:power4.out;st:2000;sp:1000;sR:2000;" data-frame_999="o:0;st:w;sR:6000;" data-frame_hover="bgc:#3b5998;boc:#3b5998;bor:50%,50%,50%,50%;bos:solid;bow:2px,2px,2px,2px;oX:50;oY:50;e:power2.inOut;" style="z-index:16;font-family:Open Sans;cursor:pointer;"><i class="fa-facebook-f"></i> 
+							</a><!--
+
+							--><a id="slider-589-slide-1253-layer-17" class="rs-layer" href="https://www.facebook.com/Steeeephen/" target="_self" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:170px,120px,120px,100px;y:b;yo:100px,100px,50px,30px;" data-text="l:60;a:center;" data-dim="w:60px;h:60px;" data-basealign="slide" data-border="bos:solid;boc:rgba(255,255,255,1);bow:2px,2px,2px,2px;bor:50%,50%,50%,50%;" data-frame_0="y:50px;blu:20px;" data-frame_1="e:power4.out;st:2000;sp:1000;sR:2000;" data-frame_999="o:0;st:w;sR:6000;" data-frame_hover="bgc:#55acee;boc:#55acee;bor:50%,50%,50%,50%;bos:solid;bow:2px,2px,2px,2px;oX:50;oY:50;e:power2.inOut;" style="z-index:17;font-family:Open Sans;cursor:pointer;"><i class="fa-twitter"></i> 
+							</a><!--
+
+							--><a id="slider-589-slide-1253-layer-18" class="rs-layer" href="https://www.facebook.com/Steeeephen/" target="_self" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:240px,190px,190px,170px;y:b;yo:100px,100px,50px,30px;" data-text="l:60;a:center;" data-dim="w:60px;h:60px;" data-basealign="slide" data-border="bos:solid;boc:rgba(255,255,255,1);bow:2px,2px,2px,2px;bor:50%,50%,50%,50%;" data-frame_0="y:50px;blu:20px;" data-frame_1="e:power4.out;st:2000;sp:1000;sR:2000;" data-frame_999="o:0;st:w;sR:6000;" data-frame_hover="bgc:#dd4b39;boc:#dd4b39;bor:50%,50%,50%,50%;bos:solid;bow:2px,2px,2px,2px;oX:50;oY:50;e:power2.inOut;" style="z-index:18;font-family:Open Sans;cursor:pointer;"><i class="fa-google-plus"></i> 
+							</a><!--
+-->						</rs-slide>
+					</rs-slides>
+				</rs-module>
+				<script type="text/javascript">
+					setREVStartSize({c: 'rev_slider_589_2',rl:[1240,1024,778,480],el:[868,768,960,720],gw:[1240,1024,778,480],gh:[868,768,960,720],type:'hero',justify:'',layout:'fullscreen',offsetContainer:'',offset:'',mh:"0"});
+					var	revapi589,
+						tpj;
+					function revinit_revslider5892() {
+					jQuery(function() {
+						tpj = jQuery;
+						revapi589 = tpj("#rev_slider_589_2");
+						if(revapi589==undefined || revapi589.revolution == undefined){
+							revslider_showDoubleJqueryError("rev_slider_589_2");
+						}else{
+							revapi589.revolution({
+								sliderType:"hero",
+								sliderLayout:"fullscreen",
+								visibilityLevels:"1240,1024,778,480",
+								gridwidth:"1240,1024,778,480",
+								gridheight:"868,768,960,720",
+								perspective:600,
+								perspectiveType:"local",
+								editorheight:"868,768,960,720",
+								responsiveLevels:"1240,1024,778,480",
+								progressBar:{disableProgressBar:true},
+								navigation: {
+									onHoverStop:false
+								},
+								fallbacks: {
+									allowHTML5AutoPlayOnAndroid:true
+								},
+							});
+						}
+						
+					});
+					} // End of RevInitScript
+				var once_revslider5892 = false;
+				if (document.readyState === "loading") {document.addEventListener('readystatechange',function() { if((document.readyState === "interactive" || document.readyState === "complete") && !once_revslider5892 ) { once_revslider5892 = true; revinit_revslider5892();}});} else {once_revslider5892 = true; revinit_revslider5892();}
+				</script>
+			</rs-module-wrap>
+			<!-- END REVOLUTION SLIDER -->
+</div>
+
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
 						</div>
 					</div>
-				</div>
-			</section>
-		</div>
-	</div>
-
-	<article id="post-2" class="post-2 page type-page status-publish hentry entry">
-
-
-		<div class="entry-content">
-			<div data-elementor-type="wp-page" data-elementor-id="2" class="elementor elementor-2"
-				data-elementor-settings="[]">
-				<div class="elementor-section-wrap">
-					<section
-						class="elementor-section elementor-top-section elementor-element elementor-element-e07bf29 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-						data-id="e07bf29" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-no">
-							<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-cc5b471"
-								data-id="cc5b471" data-element_type="column">
-								<div class="elementor-widget-wrap">
-								</div>
-							</div>
-						</div>
-					</section>
-					<section
-						class="elementor-section elementor-top-section elementor-element elementor-element-2f79461 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-						data-id="2f79461" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-no">
-							<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9be35d7"
-								data-id="9be35d7" data-element_type="column">
-								<div class="elementor-widget-wrap elementor-element-populated">
-									<div class="elementor-element elementor-element-a7adbe2 elementor-widget elementor-widget-slider_revolution"
-										data-id="a7adbe2" data-element_type="widget"
-										data-widget_type="slider_revolution.default">
-										<div class="elementor-widget-container">
-
-											<div class="wp-block-themepunch-revslider">
-												<!-- START Isometric Slider1 REVOLUTION SLIDER 6.4.5 -->
-												<p class="rs-p-wp-fix"></p>
-												<rs-module-wrap id="rev_slider_922_2_wrapper" data-source="gallery"
-													style="background:linear-gradient(130deg, rgba(255,236,133,1) 0%, rgba(236,104,91,1) 100%);padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
-													<rs-module id="rev_slider_922_2" style="" data-version="6.4.5">
-														<rs-slides>
-															<rs-slide data-key="rs-1996" data-title="Slide 1"
-																data-thumb="/wp-content/uploads/revslider/isometric-slider/tech-slider-new-thumb-1.jpg"
-																data-anim="ms:1000;r:0;" data-in="o:0;"
-																data-out="a:false;">
-																<img src="./wp-content/plugins/revslider/public/assets/assets/transparent.png"
-																	alt="Slide 1" title="Home"
-																	class="rev-slidebg tp-rs-img"
-																	data-bg="c:linear-gradient(130deg, rgba(255,236,133,1) 0%, rgba(236,104,91,1) 100%);"
-																	data-no-retina>
-																<!--
-							-->
-																<rs-group id="slider-922-slide-1996-layer-23"
-																	data-type="group" data-rsp_ch="on"
-																	data-xy="x:c;xo:-400px,-359px,-269px,-168px;y:m;yo:350px,314px,235px,146px;"
-																	data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																	data-dim="w:1000px,898px,673px,420px;h:1000px,898px,673px,420px;"
-																	data-basealign="slide"
-																	data-frame_0="x:-600px,-538px,-403px,-251px;y:400px,359px,269px,168px;o:1;"
-																	data-frame_1="sp:1000;"
-																	data-frame_999="st:w;sp:1000;sR:8000;auto:true;"
-																	style="z-index:15;">
-																	<!--
-								-->
-																	<rs-layer id="slider-922-slide-1996-layer-22"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="x:c;y:m;"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																		data-dim="w:350px,314px,235px,146px;h:1000px,898px,673px,420px;"
-																		data-frame_0="o:1;skX:-64px;skY:30px;"
-																		data-frame_1="skX:-64px;skY:30px;"
-																		data-frame_999="o:0;st:w;sR:8700;"
-																		style="z-index:12;background:linear-gradient(50deg, rgba(254,230,131,1) 0%, rgba(251,211,125,1) 100%);">
-																	</rs-layer>
-																	<!--
-
-								-->
-																	<rs-layer id="slider-922-slide-1996-layer-24"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="xo:-124px,-111px,-83px,-51px;yo:719px,645px,483px,301px;"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																		data-dim="w:350px,314px,235px,146px;h:350px,314px,235px,146px;"
-																		data-frame_0="o:1;skY:30px;"
-																		data-frame_1="skY:30px;"
-																		data-frame_999="o:0;st:w;sR:8700;"
-																		style="z-index:13;background:linear-gradient(5deg, rgba(254,226,130,1) 0%, rgba(251,209,125,1) 100%);">
-																	</rs-layer>
-																	<!--
-
-								-->
-																	<rs-layer id="slider-922-slide-1996-layer-25"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="xo:151px,135px,101px,63px;yo:587px,527px,395px,246px;"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																		data-dim="w:1000px,898px,673px,420px;h:350px,314px,235px,146px;"
-																		data-frame_0="o:1;skY:-26px;"
-																		data-frame_1="skY:-26px;"
-																		data-frame_999="o:0;st:w;sR:8700;"
-																		style="z-index:14;background:linear-gradient(50deg, rgba(250,198,121,1) 0%, rgba(245,164,110,1) 100%);">
-																	</rs-layer>
-																	<!--
-							-->
-																</rs-group>
-																<!--
-
-							-->
-																<rs-group id="slider-922-slide-1996-layer-31"
-																	data-type="group" data-rsp_ch="on"
-																	data-xy="x:c;xo:1110px,997px,747px,466px;y:m;yo:-500px,-449px,-336px,-210px;"
-																	data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																	data-dim="w:1000px,898px,673px,420px;h:1000px,898px,673px,420px;"
-																	data-basealign="slide"
-																	data-frame_0="x:600px,538px,403px,251px;y:-400px,-359px,-269px,-168px;o:1;"
-																	data-frame_1="sp:1000;"
-																	data-frame_999="st:w;sp:1000;sR:8000;auto:true;"
-																	style="z-index:11;">
-																	<!--
-								-->
-																	<rs-layer id="slider-922-slide-1996-layer-32"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="x:c;y:m;"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																		data-dim="w:350px,314px,235px,146px;h:1000px,898px,673px,420px;"
-																		data-frame_0="o:1;skX:-64px;skY:30px;"
-																		data-frame_1="skX:-64px;skY:30px;"
-																		data-frame_999="o:0;st:w;sR:8700;"
-																		style="z-index:8;background:linear-gradient(50deg, rgba(254,230,131,1) 0%, rgba(251,211,125,1) 100%);">
-																	</rs-layer>
-																	<!--
-
-								-->
-																	<rs-layer id="slider-922-slide-1996-layer-33"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="xo:-124px,-111px,-83px,-51px;yo:719px,645px,483px,301px;"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																		data-dim="w:350px,314px,235px,146px;h:350px,314px,235px,146px;"
-																		data-frame_0="o:1;skY:30px;"
-																		data-frame_1="skY:30px;"
-																		data-frame_999="o:0;st:w;sR:8700;"
-																		style="z-index:9;background:linear-gradient(5deg, rgba(254,226,130,1) 0%, rgba(251,209,125,1) 100%);">
-																	</rs-layer>
-																	<!--
-
-								-->
-																	<rs-layer id="slider-922-slide-1996-layer-34"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="xo:151px,135px,101px,63px;yo:587px,527px,395px,246px;"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																		data-dim="w:1000px,898px,673px,420px;h:350px,314px,235px,146px;"
-																		data-frame_0="o:1;skY:-26px;"
-																		data-frame_1="skY:-26px;"
-																		data-frame_999="o:0;st:w;sR:8700;"
-																		style="z-index:10;background:linear-gradient(50deg, rgba(250,198,121,1) 0%, rgba(245,164,110,1) 100%);">
-																	</rs-layer>
-																	<!--
-							-->
-																</rs-group>
-																<!--
-
-							-->
-																<rs-group id="slider-922-slide-1996-layer-57"
-																	data-type="group" data-rsp_ch="on"
-																	data-xy="x:c;xo:-229px,-205px,-153px,-95px;y:m;yo:77px,69px,51px,31px;"
-																	data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																	data-dim="w:232px,208px,156px,97px;h:290px,260px,195px,121px;"
-																	data-basealign="slide"
-																	data-ford="frame_0;frame_1;frame_2;frame_3;frame_999;"
-																	data-frame_0="x:-20px,-17px,-12px,-7px;y:-10px,-8px,-6px,-3px;"
-																	data-frame_1="st:1100;sp:1000;sR:1100;"
-																	data-frame_999="o:0;st:w;sR:6900;sA:9000;"
-																	data-frame_2="x:43px,38px,28px,17px;y:30px,26px,19px,11px;oX:50%;oY:50%;oZ:0;tp:600px;st:4300;sp:500;"
-																	data-frame_3="x:500px,449px,336px,210px;y:-250px,-224px,-168px,-105px;o:0;oX:50%;oY:50%;oZ:0;tp:600px;st:5100;sp:1000;"
-																	style="z-index:20;">
-																	<!--
-								-->
-																	<rs-layer id="slider-922-slide-1996-layer-56"
-																		data-type="image" data-rsp_ch="on"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																		data-dim="w:232px,208px,156px,97px;h:289px,259px,194px,121px;"
-																		data-frame_999="o:0;st:w;sR:8700;"
-																		style="z-index:18;"><img loading="lazy"
-																			src="./wp-content/uploads/revslider/isometric-slider/tech-slider-1-macbook-screen-BG.png"
-																			class="tp-rs-img" width="463" height="577"
-																			data-no-retina>
-																	</rs-layer>
-																	<!--
-
-								-->
-																	<rs-layer id="slider-922-slide-1996-layer-58"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="xo:-10px,-8px,-6px,-3px;yo:58px,52px,39px,24px;"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																		data-dim="w:254px,228px,171px,106px;h:176px,158px,118px,73px;"
-																		data-frame_0="o:1;skY:-26px;"
-																		data-frame_1="skY:-26px;"
-																		data-frame_999="o:0;st:w;sR:8700;"
-																		style="z-index:19;background-color:rgba(0,0,0,0.5);">
-																		<rs-bg-elem
-																			style="background: url('/wp-content/uploads/revslider/isometric-slider/tech-slider-1-macbook-screen-1.jpg') no-repeat center center; background-size: cover;">
-																		</rs-bg-elem>
-
-																	</rs-layer>
-																	<!--
-							-->
-																</rs-group>
-																<!--
-
-							-->
-																<rs-group id="slider-922-slide-1996-layer-59"
-																	data-type="group" data-rsp_ch="on"
-																	data-xy="x:c;xo:-208px,-186px,-139px,-86px;y:m;yo:90px,80px,60px,37px;"
-																	data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																	data-dim="w:232px,208px,156px,97px;h:290px,260px,195px,121px;"
-																	data-basealign="slide"
-																	data-ford="frame_0;frame_1;frame_2;frame_3;frame_999;"
-																	data-frame_0="x:-43px,-38px,-28px,-17px;y:-22px,-19px,-14px,-8px;"
-																	data-frame_1="st:1100;sp:1000;sR:1100;"
-																	data-frame_999="o:0;st:w;sR:6900;sA:9000;"
-																	data-frame_2="x:20px,17px,12px,7px;y:16px,14px,10px,6px;oX:50%;oY:50%;oZ:0;tp:600px;st:3000;sp:500;"
-																	data-frame_3="x:500px,449px,336px,210px;y:-250px,-224px,-168px,-105px;o:0;oX:50%;oY:50%;oZ:0;tp:600px;st:3800;sp:1000;"
-																	style="z-index:23;">
-																	<!--
-								-->
-																	<rs-layer id="slider-922-slide-1996-layer-60"
-																		data-type="image" data-rsp_ch="on"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																		data-dim="w:232px,208px,156px,97px;h:289px,259px,194px,121px;"
-																		data-frame_999="o:0;st:w;sR:8700;"
-																		style="z-index:21;"><img loading="lazy"
-																			src="./wp-content/uploads/revslider/isometric-slider/tech-slider-1-macbook-screen-BG.png"
-																			class="tp-rs-img" width="463" height="577"
-																			data-no-retina>
-																	</rs-layer>
-																	<!--
-
-								-->
-																	<rs-layer id="slider-922-slide-1996-layer-61"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="xo:-10px,-8px,-6px,-3px;yo:58px,52px,39px,24px;"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																		data-dim="w:254px,228px,171px,106px;h:176px,158px,118px,73px;"
-																		data-frame_0="o:1;skY:-26px;"
-																		data-frame_1="skY:-26px;"
-																		data-frame_999="o:0;st:w;sR:8700;"
-																		style="z-index:22;background-color:rgba(0,0,0,0.5);">
-																		<rs-bg-elem
-																			style="background: url('/wp-content/uploads/revslider/isometric-slider/tech-slider-1-macbook-screen-2.jpg') no-repeat center center; background-size: cover;">
-																		</rs-bg-elem>
-
-																	</rs-layer>
-																	<!--
-							-->
-																</rs-group>
-																<!--
-
-							-->
-																<rs-group id="slider-922-slide-1996-layer-63"
-																	data-type="group" data-rsp_ch="on"
-																	data-xy="x:c;xo:-185px,-166px,-124px,-77px;y:m;yo:106px,95px,71px,44px;"
-																	data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																	data-dim="w:232px,208px,156px,97px;h:290px,260px,195px,121px;"
-																	data-basealign="slide"
-																	data-ford="frame_0;frame_1;frame_2;frame_999;"
-																	data-frame_0="x:-65px,-58px,-43px,-26px;y:-40px,-35px,-26px,-16px;"
-																	data-frame_1="st:1100;sp:1000;sR:1100;"
-																	data-frame_999="o:0;st:w;sR:5600;sA:9000;"
-																	data-frame_2="x:500px,449px,336px,210px;y:-250px,-224px,-168px,-105px;o:0;oX:50%;oY:50%;oZ:0;tp:600px;st:2500;sp:1000;sR:900;"
-																	style="z-index:26;">
-																	<!--
-								-->
-																	<rs-layer id="slider-922-slide-1996-layer-64"
-																		data-type="image" data-rsp_ch="on"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																		data-dim="w:232px,208px,156px,97px;h:289px,259px,194px,121px;"
-																		data-frame_999="o:0;st:w;sR:8700;"
-																		style="z-index:5;"><img loading="lazy"
-																			src="./wp-content/uploads/revslider/isometric-slider/tech-slider-1-macbook-screen-BG.png"
-																			class="tp-rs-img" width="463" height="577"
-																			data-no-retina>
-																	</rs-layer>
-																	<!--
-
-								-->
-																	<rs-layer id="slider-922-slide-1996-layer-65"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="xo:-10px,-8px,-6px,-3px;yo:58px,52px,39px,24px;"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																		data-dim="w:254px,228px,171px,106px;h:176px,158px,118px,73px;"
-																		data-frame_0="o:1;skY:-26px;"
-																		data-frame_1="skY:-26px;"
-																		data-frame_999="o:0;st:w;sR:8700;"
-																		style="z-index:25;background-color:rgba(0,0,0,0.5);">
-																		<rs-bg-elem
-																			style="background: url('/wp-content/uploads/revslider/isometric-slider/tech-slider-1-macbook-screen-3.jpg') no-repeat center center; background-size: cover;">
-																		</rs-bg-elem>
-
-																	</rs-layer>
-																	<!--
-							-->
-																</rs-group>
-																<!--
-
-							-->
-																<rs-layer id="slider-922-slide-1996-layer-2"
-																	data-type="image" data-rsp_ch="on"
-																	data-xy="x:c;xo:-166px,-149px,-111px,-69px;y:m;yo:117px,105px,78px,48px;"
-																	data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																	data-dim="w:419px,376px,282px,176px;h:417px,374px,280px,175px;"
-																	data-basealign="slide"
-																	data-frame_0="x:-875px,-785px,-588px,-367px;y:500px,449px,336px,210px;"
-																	data-frame_1="st:500;sp:1000;sR:500;"
-																	data-frame_999="o:0;st:w;sR:7500;"
-																	style="z-index:16;"><img loading="lazy"
-																		src="./wp-content/uploads/revslider/isometric-slider/tech-slider-1-macbook@2x.png"
-																		class="tp-rs-img" width="838" height="833"
-																		data-no-retina>
-																</rs-layer>
-																<!--
-
-							-->
-																<rs-layer id="slider-922-slide-1996-layer-3"
-																	data-type="text" data-rsp_ch="on"
-																	data-xy="x:c;xo:299px,268px,201px,91px;y:m;yo:-31px,-27px,-20px,-43px;"
-																	data-text="s:120,107,80,50;l:120,107,80,50;ls:-4px,-3px,-2px,-1px;"
-																	data-frame_0="y:-857px,-769px,-576px,-360px;o:1;skY:-27px;"
-																	data-frame_1="skY:-27px;st:500;sp:1000;sR:500;"
-																	data-frame_999="y:-800px,-718px,-538px,-336px;o:0;st:w;sp:1000;sR:7500;"
-																	style="z-index:28;font-family:Anton;text-transform:uppercase;">
-																	Make a Bold<br>
-																	Statement
-																</rs-layer>
-																<!--
-
-							-->
-																<rs-layer id="slider-922-slide-1996-layer-4"
-																	data-type="text" data-color="#fff6ad"
-																	data-rsp_ch="on"
-																	data-xy="x:c;xo:419px,369px,276px,98px;y:m;yo:127px,135px,101px,191px;"
-																	data-text="w:normal;s:30,26,19,30;l:35,31,23,35;fw:500;"
-																	data-dim="w:400px,359px,269px,300px;"
-																	data-basealign="slide"
-																	data-frame_0="y:800px,718px,538px,336px;o:1;skY:-27px;"
-																	data-frame_1="skY:-27px;st:500;sp:1000;sR:500;"
-																	data-frame_999="y:800px,718px,538px,336px;o:0;st:w;sR:7500;"
-																	style="z-index:27;font-family:Barlow Condensed;text-transform:uppercase;">
-																	Striking presentations that expand the perception of
-																	your viewers.
-																</rs-layer>
-																<!--
-
-							-->
-																<rs-layer id="slider-922-slide-1996-layer-55"
-																	data-type="shape" data-rsp_ch="on"
-																	data-xy="x:c;xo:-250px,-224px,-168px,-105px;y:m;yo:71px,63px,47px,29px;"
-																	data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																	data-dim="w:255px,229px,171px,106px;h:180px,161px,120px,75px;"
-																	data-basealign="slide"
-																	data-frame_0="x:-875px,-785px,-588px,-367px;y:500px,449px,336px,210px;skY:-26px;"
-																	data-frame_1="skY:-26px;st:500;sp:1000;sR:500;"
-																	data-frame_999="o:0;st:w;sR:7500;"
-																	style="z-index:17;background-color:rgba(0,0,0,0.5);">
-																	<rs-bg-elem
-																		style="background: url('/wp-content/uploads/revslider/isometric-slider/tech-slider-1-macbook-screen.jpg') no-repeat center center; background-size: cover;">
-																	</rs-bg-elem>
-
-																</rs-layer>
-																<!--
--->
-															</rs-slide>
-															<rs-slide data-key="rs-1997" data-title="Slide 2"
-																data-thumb="/wp-content/uploads/revslider/isometric-slider/tech-slider-new-thumb-2.jpg"
-																data-anim="ms:1000;r:0;" data-in="o:0;"
-																data-out="a:false;">
-																<img src="./wp-content/plugins/revslider/public/assets/assets/transparent.png"
-																	alt="Slide 2" title="Home"
-																	class="rev-slidebg tp-rs-img"
-																	data-bg="c:linear-gradient(130deg, rgba(60,239,255,1) 0%, rgba(125,91,236,1) 100%);"
-																	data-no-retina>
-																<!--
-							-->
-																<rs-group id="slider-922-slide-1997-layer-35"
-																	data-type="group" data-rsp_ch="on"
-																	data-xy="x:c;xo:-47px,-42px,-31px,-19px;y:m;yo:92px,82px,61px,38px;"
-																	data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																	data-dim="w:1000px,898px,673px,420px;h:1000px,898px,673px,420px;"
-																	data-basealign="slide"
-																	data-frame_0="y:1000px,898px,673px,420px;o:1;"
-																	data-frame_1="sp:1000;"
-																	data-frame_999="x:-1000px,-898px,-673px,-420px;y:-600px,-538px,-403px,-251px;o:1;st:w;sp:1000;sR:8000;sA:9000;"
-																	style="z-index:11;">
-																	<!--
-								-->
-																	<rs-layer id="slider-922-slide-1997-layer-36"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="x:c;y:m;"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																		data-dim="w:350px,314px,235px,146px;h:1000px,898px,673px,420px;"
-																		data-frame_0="o:1;skX:-64px;skY:30px;"
-																		data-frame_1="skX:-64px;skY:30px;"
-																		data-frame_999="o:0;st:w;sR:8700;"
-																		style="z-index:8;background:linear-gradient(50deg, rgba(61,238,254,1) 0%, rgba(141,165,254,1) 100%);">
-																	</rs-layer>
-																	<!--
-
-								-->
-																	<rs-layer id="slider-922-slide-1997-layer-37"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="xo:-124px,-111px,-83px,-51px;yo:719px,645px,483px,301px;"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																		data-dim="w:350px,314px,235px,146px;h:350px,314px,235px,146px;"
-																		data-frame_0="o:1;skY:30px;"
-																		data-frame_1="skY:30px;"
-																		data-frame_999="o:0;st:w;sR:8700;"
-																		style="z-index:9;background:linear-gradient(130deg, rgba(132,243,254,1) 0%, rgba(121,240,252,1) 100%);">
-																	</rs-layer>
-																	<!--
-
-								-->
-																	<rs-layer id="slider-922-slide-1997-layer-38"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="xo:151px,135px,101px,63px;yo:587px,527px,395px,246px;"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																		data-dim="w:1000px,898px,673px,420px;h:350px,314px,235px,146px;"
-																		data-frame_0="o:1;skY:-26px;"
-																		data-frame_1="skY:-26px;"
-																		data-frame_999="o:0;st:w;sR:8700;"
-																		style="z-index:10;background:linear-gradient(50deg, rgba(45,217,235,1) 0%, rgba(109,82,230,1) 100%);">
-																	</rs-layer>
-																	<!--
-							-->
-																</rs-group>
-																<!--
-
-							-->
-																<rs-group id="slider-922-slide-1997-layer-39"
-																	data-type="group" data-rsp_ch="on"
-																	data-xy="x:c;xo:952px,855px,641px,400px;y:m;yo:330px,296px,222px,138px;"
-																	data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																	data-dim="w:1000px,898px,673px,420px;h:1000px,898px,673px,420px;"
-																	data-basealign="slide"
-																	data-frame_0="x:1000px,898px,673px,420px;y:400px,359px,269px,168px;o:1;"
-																	data-frame_1="st:300;sp:1000;sR:300;"
-																	data-frame_999="st:w;sp:1000;sR:7700;auto:true;"
-																	style="z-index:15;">
-																	<!--
-								-->
-																	<rs-layer id="slider-922-slide-1997-layer-40"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="x:c;y:m;"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																		data-dim="w:350px,314px,235px,146px;h:1000px,898px,673px,420px;"
-																		data-frame_0="o:1;skX:64px;skY:-30px;"
-																		data-frame_1="skX:64px;skY:-27px;"
-																		data-frame_999="o:0;st:w;sR:8700;"
-																		style="z-index:14;background:linear-gradient(50deg, rgba(61,238,254,1) 0%, rgba(141,165,254,1) 100%);">
-																	</rs-layer>
-																	<!--
-
-								-->
-																	<rs-layer id="slider-922-slide-1997-layer-41"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="x:r;xo:-125px,-112px,-84px,-52px;yo:719px,645px,483px,301px;"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																		data-dim="w:350px,314px,235px,146px;h:350px,314px,235px,146px;"
-																		data-frame_0="o:1;skY:-27px;"
-																		data-frame_1="skY:-27px;"
-																		data-frame_999="o:0;st:w;sR:8700;"
-																		style="z-index:13;background:linear-gradient(130deg, rgba(132,243,254,1) 0%, rgba(121,240,252,1) 100%);">
-																	</rs-layer>
-																	<!--
-
-								-->
-																	<rs-layer id="slider-922-slide-1997-layer-42"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="xo:-156px,-140px,-105px,-65px;yo:579px,520px,390px,243px;"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																		data-dim="w:1000px,898px,673px,420px;h:350px,314px,235px,146px;"
-																		data-frame_0="o:1;skY:26px;"
-																		data-frame_1="skY:26px;"
-																		data-frame_999="o:0;st:w;sR:8700;"
-																		style="z-index:12;background:linear-gradient(50deg, rgba(45,217,235,1) 0%, rgba(109,82,230,1) 100%);">
-																	</rs-layer>
-																	<!--
-							-->
-																</rs-group>
-																<!--
-
-							-->
-																<rs-layer id="slider-922-slide-1997-layer-2"
-																	data-type="image" data-rsp_ch="on"
-																	data-xy="x:c;xo:234px,210px,157px,107px;y:m;yo:-132px,-118px,-88px,-57px;"
-																	data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																	data-dim="w:419px,376px,282px,176px;h:417px,374px,280px,175px;"
-																	data-frame_0="x:-400px,-359px,-269px,-168px;y:250px,224px,168px,105px;o:1;"
-																	data-frame_1="sp:1000;"
-																	data-frame_999="x:-1000px,-898px,-673px,-420px;y:-700px,-628px,-471px,-294px;o:0;st:w;sp:1000;sR:8000;"
-																	style="z-index:16;"><img loading="lazy"
-																		src="./wp-content/uploads/revslider/isometric-slider/tech-slider-1-macbook@2x.png"
-																		class="tp-rs-img" width="838" height="833"
-																		data-no-retina>
-																</rs-layer>
-																<!--
-
-							-->
-																<rs-layer id="slider-922-slide-1997-layer-3"
-																	data-type="text" data-rsp_ch="on"
-																	data-xy="x:c,c,c,l;xo:-240px,-215px,-161px,33px;y:m,m,m,t;yo:10px,8px,6px,350px;"
-																	data-text="s:120,107,80,50;l:120,107,80,50;ls:-4px,-3px,-2px,-1px;"
-																	data-frame_0="x:-1200px,-1077px,-807px,-504px;y:600px,538px,403px,251px;o:1;skY:-27px;"
-																	data-frame_1="skY:-27px;st:300;sp:1000;sR:300;"
-																	data-frame_999="st:w;sp:1000;sR:7700;auto:true;"
-																	style="z-index:23;font-family:Anton;text-transform:uppercase;">
-																	Design for <br>all devices
-																</rs-layer>
-																<!--
-
-							-->
-																<rs-layer id="slider-922-slide-1997-layer-4"
-																	data-type="text" data-rsp_ch="on"
-																	data-xy="x:c;xo:479px,294px,220px,98px;y:m;yo:-178px,214px,160px,220px;"
-																	data-text="w:normal;s:30,26,19,20;l:35,31,23,25;fw:500;"
-																	data-dim="w:400px,359px,269px,250px;"
-																	data-basealign="slide"
-																	data-frame_0="y:-800px,-718px,-538px,-336px;o:1;skY:29px;"
-																	data-frame_1="skY:29px;st:500;sp:1000;sR:500;"
-																	data-frame_999="x:400px,359px,269px,168px;y:-250px,-224px,-168px,-105px;o:0;st:w;sp:1000;sR:7500;"
-																	style="z-index:22;font-family:Barlow Condensed;text-transform:uppercase;">
-																	Slider Revolution 6.0 is a web-design and animation
-																	tool with a clear, visual interface
-																</rs-layer>
-																<!--
-
-							-->
-																<rs-layer id="slider-922-slide-1997-layer-8"
-																	data-type="image" data-rsp_ch="on"
-																	data-xy="x:c;xo:-46px,-41px,-30px,-18px;y:m;yo:142px,127px,95px,59px;"
-																	data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																	data-dim="w:315px,282px,211px,131px;h:156px,140px,105px,65px;"
-																	data-basealign="slide"
-																	data-frame_0="x:-400px,-359px,-269px,-168px;y:250px,224px,168px,105px;skX:-2px;"
-																	data-frame_1="skX:-2px;sp:1000;"
-																	data-frame_999="x:-1400px,-1257px,-942px,-588px;y:-470px,-422px,-316px,-197px;o:0;st:w;sp:1000;sR:8000;"
-																	style="z-index:18;"><img loading="lazy"
-																		src="./wp-content/uploads/revslider/isometric-slider/tech-slider-2-ipad@2x.png"
-																		class="tp-rs-img" width="629" height="311"
-																		data-no-retina>
-																</rs-layer>
-																<!--
-
-							-->
-																<rs-layer id="slider-922-slide-1997-layer-9"
-																	data-type="image" data-rsp_ch="on"
-																	data-xy="x:c;xo:-259px,-232px,-174px,-108px;y:m;yo:255px,229px,171px,106px;"
-																	data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																	data-dim="w:189px,169px,126px,78px;h:93px,83px,62px,38px;"
-																	data-basealign="slide"
-																	data-frame_0="x:-400px,-359px,-269px,-168px;y:250px,224px,168px,105px;"
-																	data-frame_1="sp:1000;"
-																	data-frame_999="x:-1400px,-1257px,-942px,-588px;y:-470px,-422px,-316px,-197px;o:0;st:w;sp:1000;sR:8000;"
-																	style="z-index:20;"><img loading="lazy"
-																		src="./wp-content/uploads/revslider/isometric-slider/tech-slider-2-iphone@2x.png"
-																		class="tp-rs-img" width="378" height="185"
-																		data-no-retina>
-																</rs-layer>
-																<!--
-
-							-->
-																<rs-layer id="slider-922-slide-1997-layer-66"
-																	data-type="shape" data-rsp_ch="on"
-																	data-xy="x:c;xo:150px,134px,100px,71px;y:m;yo:-177px,-158px,-118px,-76px;"
-																	data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																	data-dim="w:255px,229px,171px,106px;h:180px,161px,120px,75px;"
-																	data-frame_0="x:-400px,-359px,-269px,-168px;y:250px,224px,168px,105px;o:1;skY:-26px;"
-																	data-frame_1="skY:-26px;sp:1000;"
-																	data-frame_999="x:-1000px,-898px,-673px,-420px;y:-700px,-628px,-471px,-294px;o:0;st:w;sp:1000;sR:8000;"
-																	style="z-index:17;background-color:rgba(0,0,0,0.5);">
-																	<rs-bg-elem
-																		style="background: url('/wp-content/uploads/revslider/isometric-slider/tech-slider-1-macbook-screen.jpg') no-repeat center center; background-size: cover;">
-																	</rs-bg-elem>
-
-																</rs-layer>
-																<!--
-
-							-->
-																<rs-layer id="slider-922-slide-1997-layer-68"
-																	data-type="shape" data-rsp_ch="on"
-																	data-xy="x:c;xo:-51px,-45px,-33px,-20px;y:m;yo:138px,123px,92px,57px;"
-																	data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																	data-dim="w:172px,154px,115px,71px;h:125px,112px,84px,52px;"
-																	data-basealign="slide"
-																	data-frame_0="x:-400px,-359px,-269px,-168px;y:250px,224px,168px,105px;skX:63px;skY:-26px;"
-																	data-frame_1="skX:63px;skY:-26px;sp:1000;"
-																	data-frame_999="x:-1400px,-1257px,-942px,-588px;y:-470px,-422px,-316px,-197px;o:0;st:w;sp:1000;"
-																	style="z-index:19;background-color:rgba(0,0,0,0.5);">
-																	<rs-bg-elem
-																		style="background: url('/wp-content/uploads/revslider/isometric-slider/tech-slider-2-ipad-screen.jpg') no-repeat center center; background-size: cover;">
-																	</rs-bg-elem>
-
-																</rs-layer>
-																<!--
-
-							-->
-																<rs-layer id="slider-922-slide-1997-layer-69"
-																	data-type="shape" data-rsp_ch="on"
-																	data-xy="x:c;xo:-258px,-231px,-173px,-108px;y:m;yo:251px,225px,168px,105px;"
-																	data-text="w:normal;s:20,17,12,7;l:0,22,16,10;"
-																	data-dim="w:54px,48px,36px,22px;h:92px,82px,61px,38px;"
-																	data-basealign="slide"
-																	data-frame_0="x:-400px,-359px,-269px,-168px;y:250px,224px,168px,105px;skX:63px;skY:-26px;"
-																	data-frame_1="skX:63px;skY:-26px;sp:1000;"
-																	data-frame_999="x:-1400px,-1257px,-942px,-588px;y:-470px,-422px,-316px,-197px;o:0;st:w;sp:1000;"
-																	style="z-index:21;background-color:rgba(0,0,0,0.5);">
-																	<rs-bg-elem
-																		style="background: url('/wp-content/uploads/revslider/isometric-slider/tech-slider-2-iphone-screen.jpg') no-repeat center center; background-size: cover;">
-																	</rs-bg-elem>
-
-																</rs-layer>
-																<!--
--->
-															</rs-slide>
-															<rs-slide data-key="rs-1998" data-title="Slide 3"
-																data-thumb="/wp-content/uploads/revslider/isometric-slider/tech-slider-new-thumb-3.jpg"
-																data-anim="ms:1000;r:0;" data-in="o:0;"
-																data-out="a:false;">
-																<img src="./wp-content/plugins/revslider/public/assets/assets/transparent.png"
-																	alt="Slide 3" title="Home"
-																	class="rev-slidebg tp-rs-img"
-																	data-bg="c:linear-gradient(130deg, rgba(129,115,236,1) 0%, rgba(255,142,142,1) 100%);"
-																	data-no-retina>
-																<!--
-							-->
-																<rs-group id="slider-922-slide-1998-layer-50"
-																	data-type="group" data-rsp_ch="on"
-																	data-xy="x:c;xo:-370px,-332px,-252px,-155px;y:m;yo:170px,152px,115px,70px;"
-																	data-text="w:normal;s:20,17,12,7;l:0,22,16,9;"
-																	data-dim="w:1000px,898px,682px,420px;h:1000px,898px,682px,420px;"
-																	data-basealign="slide"
-																	data-frame_0="x:1000px,898px,682px,420px;y:500px,449px,341px,210px;o:1;"
-																	data-frame_1="st:300;sp:1000;sR:300;"
-																	data-frame_999="st:w;sp:1000;sR:7700;auto:true;"
-																	style="z-index:8;">
-																	<!--
-								-->
-																	<rs-layer id="slider-922-slide-1998-layer-51"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="x:c;y:m;"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,9;"
-																		data-dim="w:350px,314px,238px,146px;h:600px,538px,408px,251px;"
-																		data-frame_0="o:1;skX:64px;skY:-30px;"
-																		data-frame_1="skX:64px;skY:-27px;st:300;"
-																		data-frame_999="o:0;st:w;sR:8400;"
-																		style="z-index:7;background:linear-gradient(150deg, rgba(210,119,172,1) 0%, rgba(255,142,142,1) 100%);">
-																	</rs-layer>
-																	<!--
-
-								-->
-																	<rs-layer id="slider-922-slide-1998-layer-52"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="x:r;xo:56px,50px,37px,25px;yo:631px,566px,430px,265px;"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,9;"
-																		data-dim="w:350px,314px,238px,146px;h:350px,314px,238px,146px;"
-																		data-frame_0="o:1;skY:-27px;"
-																		data-frame_1="skY:-27px;st:300;"
-																		data-frame_999="o:0;st:w;sR:8400;"
-																		style="z-index:6;background:linear-gradient(130deg, rgba(251,166,166,1) 0%, rgba(252,152,152,1) 100%);">
-																	</rs-layer>
-																	<!--
-
-								-->
-																	<rs-layer id="slider-922-slide-1998-layer-53"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="xo:44px,39px,29px,19px;yo:579px,520px,395px,242px;"
-																		data-text="w:normal;s:20,17,12,7;l:0,22,16,9;"
-																		data-dim="w:600px,538px,408px,251px;h:350px,314px,238px,146px;"
-																		data-frame_0="o:1;skY:26px;"
-																		data-frame_1="skY:26px;st:300;"
-																		data-frame_999="o:0;st:w;sR:8400;"
-																		style="z-index:5;background:linear-gradient(135deg, rgba(175,103,183,1) 0%, rgba(210,119,172,1) 100%);">
-																	</rs-layer>
-																	<!--
-							-->
-																</rs-group>
-																<!--
-
-							-->
-																<rs-layer id="slider-922-slide-1998-layer-3"
-																	data-type="text" data-rsp_ch="on"
-																	data-xy="x:c;xo:266px,238px,180px,41px;y:m;yo:-42px,-37px,-28px,243px;"
-																	data-text="s:120,107,81,49;l:120,107,81,49;ls:-4px,-3px,-2px,-1px;"
-																	data-frame_0="x:1200px,1077px,818px,504px;y:600px,538px,408px,251px;o:1;skY:27px;"
-																	data-frame_1="skY:27px;sp:1000;"
-																	data-frame_999="st:w;sp:1000;sR:8000;auto:true;"
-																	style="z-index:14;font-family:Anton;text-transform:uppercase;">
-																	Design <br>
-																	Beautiful <br>
-																	Websites
-																</rs-layer>
-																<!--
-
-							-->
-																<rs-layer id="slider-922-slide-1998-layer-4"
-																	data-type="text" data-color="#fff6ad"
-																	data-rsp_ch="on"
-																	data-xy="x:c;xo:116px,104px,79px,130px;y:m;yo:282px,253px,192px,22px;"
-																	data-text="w:normal;s:30,26,19,25;l:35,31,23,30;fw:500;"
-																	data-dim="w:400px,359px,272px,220px;"
-																	data-basealign="slide"
-																	data-frame_0="x:-1000px,-898px,-682px,-420px;y:600px,538px,408px,251px;o:1;skY:-27px;"
-																	data-frame_1="skY:-27px;st:500;sp:1000;sR:500;"
-																	data-frame_999="x:1000px,898px,682px,420px;y:-600px,-538px,-408px,-251px;o:0;st:w;sp:1000;sR:7500;"
-																	style="z-index:15;font-family:Barlow Condensed;text-transform:uppercase;">
-																	Our 200+ templates are a great starting point for
-																	your own professional website
-																</rs-layer>
-																<!--
-
-							-->
-																<rs-layer id="slider-922-slide-1998-layer-19"
-																	data-type="image" data-rsp_ch="on"
-																	data-xy="x:c;xo:-203px,-182px,-138px,-84px;y:m;yo:-20px,-17px,-12px,-7px;"
-																	data-text="w:normal;s:20,17,12,7;l:0,22,16,9;"
-																	data-dim="w:458px,411px,312px,192px;h:604px,542px,411px,253px;"
-																	data-frame_0="x:-400px,-359px,-272px,-167px;y:-250px,-224px,-170px,-104px;"
-																	data-frame_1="st:500;sp:1000;sR:500;"
-																	data-frame_999="st:w;sp:800;sR:7500;auto:true;"
-																	style="z-index:12;"><img loading="lazy"
-																		src="./wp-content/uploads/revslider/isometric-slider/tech-slider-3-imac@2x-1.png"
-																		class="tp-rs-img" width="915" height="1207"
-																		data-no-retina>
-																</rs-layer>
-																<!--
-
-							-->
-																<rs-layer id="slider-922-slide-1998-layer-70"
-																	data-type="shape" data-rsp_ch="on"
-																	data-xy="x:c;xo:-201px,-180px,-136px,-83px;y:m;yo:-45px,-40px,-30px,-18px;"
-																	data-text="w:normal;s:20,17,12,7;l:0,22,16,9;"
-																	data-dim="w:464px,416px,316px,194px;h:286px,256px,194px,119px;"
-																	data-basealign="slide"
-																	data-frame_0="x:-400px,-359px,-272px,-167px;y:-250px,-224px,-170px,-104px;skY:-26px;"
-																	data-frame_1="skY:-26px;st:500;sp:1000;sR:500;"
-																	data-frame_999="st:w;sp:800;sR:8200;auto:true;"
-																	style="z-index:13;background-color:rgba(0,0,0,0.5);">
-																	<rs-bg-elem
-																		style="background: url('/wp-content/uploads/revslider/isometric-slider/tech-slider-3-imac-screen.jpg') no-repeat center center; background-size: cover;">
-																	</rs-bg-elem>
-
-																</rs-layer>
-																<!--
--->
-															</rs-slide>
-														</rs-slides>
-													</rs-module>
-													<script type="text/javascript">
-														setREVStartSize({ c: 'rev_slider_922_2', rl: [1240, 1024, 778, 480], el: [900, 768, 768, 768], gw: [1140, 1024, 768, 480], gh: [900, 768, 768, 768], type: 'standard', justify: '', layout: 'fullwidth', mh: "0" });
-														var revapi922,
-															tpj;
-														function revinit_revslider9222() {
-															jQuery(function () {
-																tpj = jQuery;
-																revapi922 = tpj("#rev_slider_922_2");
-																if (revapi922 == undefined || revapi922.revolution == undefined) {
-																	revslider_showDoubleJqueryError("rev_slider_922_2");
-																} else {
-																	revapi922.revolution({
-																		sliderLayout: "fullwidth",
-																		visibilityLevels: "1240,1024,778,480",
-																		gridwidth: "1140,1024,768,480",
-																		gridheight: "900,768,768,768",
-																		spinner: "spinner7",
-																		perspective: 600,
-																		perspectiveType: "local",
-																		editorheight: "900,768,768,768",
-																		responsiveLevels: "1240,1024,778,480",
-																		progressBar: { disableProgressBar: true },
-																		navigation: {
-																			onHoverStop: false,
-																			touch: {
-																				touchenabled: true
-																			},
-																			arrows: {
-																				enable: true,
-																				style: "persephone",
-																				left: {
-																					h_offset: 0
-																				},
-																				right: {
-																					h_offset: 0
-																				}
-																			}
-																		},
-																		fallbacks: {
-																			allowHTML5AutoPlayOnAndroid: true
-																		},
-																	});
-																}
-
-															});
-														} // End of RevInitScript
-														var once_revslider9222 = false;
-														if (document.readyState === "loading") { document.addEventListener('readystatechange', function () { if ((document.readyState === "interactive" || document.readyState === "complete") && !once_revslider9222) { once_revslider9222 = true; revinit_revslider9222(); } }); } else { once_revslider9222 = true; revinit_revslider9222(); }
-													</script>
-													<script>
-														var htmlDivCss = unescape("%23rev_slider_922_2_wrapper%20.persephone.tparrows%20%7B%0A%09cursor%3Apointer%3B%0A%09background%3A%23ffffff%3B%0A%09width%3A60px%3B%0A%09height%3A60px%3B%0A%09position%3Aabsolute%3B%0A%09display%3Ablock%3B%0A%09z-index%3A1000%3B%0A%20%20%20%20border%3A1px%20solid%20rgba%28255%2C%20255%2C%20255%2C%200%29%3B%0A%7D%0A%23rev_slider_922_2_wrapper%20.persephone.tparrows%3Ahover%20%7B%0A%09background%3Argba%28255%2C%20255%2C%20255%2C%200.57%29%3B%0A%7D%0A%23rev_slider_922_2_wrapper%20.persephone.tparrows%3Abefore%20%7B%0A%09font-family%3A%20%27revicons%27%3B%0A%09font-size%3A15px%3B%0A%09color%3A%20%23000000%3B%0A%09display%3Ablock%3B%0A%09line-height%3A%2060px%3B%0A%09text-align%3A%20center%3B%0A%7D%0A%23rev_slider_922_2_wrapper%20.persephone.tparrows.tp-leftarrow%3Abefore%20%7B%0A%09content%3A%20%27%5Ce824%27%3B%0A%7D%0A%23rev_slider_922_2_wrapper%20.persephone.tparrows.tp-rightarrow%3Abefore%20%7B%0A%09content%3A%20%27%5Ce825%0A%27%3B%0A%7D%0A%0A%0A");
-														var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
-														if (htmlDiv) {
-															htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
-														} else {
-															var htmlDiv = document.createElement('div');
-															htmlDiv.innerHTML = '<style>' + htmlDivCss + '<\/style>';
-															document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
-														}
-													</script>
-													<script>
-														var htmlDivCss = unescape("%0A%0A%0A");
-														var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
-														if (htmlDiv) {
-															htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
-														} else {
-															var htmlDiv = document.createElement('div');
-															htmlDiv.innerHTML = '<style>' + htmlDivCss + '<\/style>';
-															document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
-														}
-													</script>
-												</rs-module-wrap>
-												<!-- END REVOLUTION SLIDER -->
-											</div>
-
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
 			</div>
-		</div>
-		<!-- .entry-content -->
+<!-- .entry-content -->
 
 	</article><!-- #post-2 -->
 
-	<script>document.body.classList.remove("no-js");</script>
-	<script>
-		if (-1 !== navigator.userAgent.indexOf('MSIE') || -1 !== navigator.appVersion.indexOf('Trident/')) {
-			document.body.classList.add('is-IE');
-		}
+<script>document.body.classList.remove("no-js");</script>	<script>
+	if ( -1 !== navigator.userAgent.indexOf( 'MSIE' ) || -1 !== navigator.appVersion.indexOf( 'Trident/' ) ) {
+		document.body.classList.add( 'is-IE' );
+	}
 	</script>
-	<link
-		href="https://fonts.googleapis.com/css?family=Roboto:400%7CHind:400%2C700%2C600%7CMr+Dafoe:400%7CAnton:400%7CBarlow+Condensed:500"
-		rel="stylesheet" property="stylesheet" media="all" type="text/css">
+	<link rel="stylesheet" property="stylesheet" id="rs-icon-set-fa-icon-css" href="/./wp-content/plugins/revslider/public/assets/fonts/font-awesome/css/font-awesome.css" type="text/css" media="all">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400%7CHind:400%2C700%2C600%7CMr+Dafoe:400%7CPoppins:700%2C300%7COpen+Sans:400" rel="stylesheet" property="stylesheet" media="all" type="text/css">
 
-	<script type="text/javascript">
-		if (typeof revslider_showDoubleJqueryError === "undefined") {
+		<script type="text/javascript">
+		if(typeof revslider_showDoubleJqueryError === "undefined") {
 			function revslider_showDoubleJqueryError(sliderID) {
 				var err = "<div class='rs_error_message_box'>";
 				err += "<div class='rs_error_message_oops'>Oops...<\/div>";
@@ -1276,13 +337,13 @@
 				err += "To fix this, you can:<br/>&nbsp;&nbsp;&nbsp; 1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on";
 				err += "<br/>&nbsp;&nbsp;&nbsp; 2. Find the double jQuery.js inclusion and remove it";
 				err += "<\/div>";
-				err += "<\/div>";
+			err += "<\/div>";
 				var slider = document.getElementById(sliderID); slider.innerHTML = err; slider.style.display = "block";
 			}
 		}
-	</script>
-	<script type="text/javascript">
-		if (typeof revslider_showDoubleJqueryError === "undefined") {
+		</script>
+		<script type="text/javascript">
+		if(typeof revslider_showDoubleJqueryError === "undefined") {
 			function revslider_showDoubleJqueryError(sliderID) {
 				var err = "<div class='rs_error_message_box'>";
 				err += "<div class='rs_error_message_oops'>Oops...<\/div>";
@@ -1291,51 +352,38 @@
 				err += "To fix this, you can:<br/>&nbsp;&nbsp;&nbsp; 1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on";
 				err += "<br/>&nbsp;&nbsp;&nbsp; 2. Find the double jQuery.js inclusion and remove it";
 				err += "<\/div>";
-				err += "<\/div>";
+			err += "<\/div>";
 				var slider = document.getElementById(sliderID); slider.innerHTML = err; slider.style.display = "block";
 			}
 		}
-	</script>
-	<script id="twenty-twenty-one-ie11-polyfills-js-after">
-		(Element.prototype.matches && Element.prototype.closest && window.NodeList && NodeList.prototype.forEach) || document.write('<script src="/wp-content/themes/twentytwentyone/assets/js/polyfills.js?ver=1.3"><\/scr' + 'ipt>');
-	</script>
-	<script src="./wp-content/themes/twentytwentyone/assets/js/responsive-embeds.js?ver=1.3"
-		id="twenty-twenty-one-responsive-embeds-script-js"></script>
-	<script src="./wp-includes/js/wp-embed.min.js?ver=5.7.2" id="wp-embed-js"></script>
-	<script src="./wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.2.2"
-		id="elementor-pro-webpack-runtime-js"></script>
-	<script src="./wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.2.3"
-		id="elementor-webpack-runtime-js"></script>
-	<script src="./wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.2.3"
-		id="elementor-frontend-modules-js"></script>
-	<script src="./wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.2.2"
-		id="elementor-sticky-js"></script>
-	<script id="elementor-pro-frontend-js-before">
-		var ElementorProFrontendConfig = { "ajaxurl": "\/wp-admin\/admin-ajax.php", "nonce": "4308797a78", "urls": { "assets": "\/wp-content\/plugins\/elementor-pro\/assets\/" }, "i18n": { "toc_no_headings_found": "No headings were found on this page." }, "shareButtonsNetworks": { "facebook": { "title": "Facebook", "has_counter": true }, "twitter": { "title": "Twitter" }, "google": { "title": "Google+", "has_counter": true }, "linkedin": { "title": "LinkedIn", "has_counter": true }, "pinterest": { "title": "Pinterest", "has_counter": true }, "reddit": { "title": "Reddit", "has_counter": true }, "vk": { "title": "VK", "has_counter": true }, "odnoklassniki": { "title": "OK", "has_counter": true }, "tumblr": { "title": "Tumblr" }, "digg": { "title": "Digg" }, "skype": { "title": "Skype" }, "stumbleupon": { "title": "StumbleUpon", "has_counter": true }, "mix": { "title": "Mix" }, "telegram": { "title": "Telegram" }, "pocket": { "title": "Pocket", "has_counter": true }, "xing": { "title": "XING", "has_counter": true }, "whatsapp": { "title": "WhatsApp" }, "email": { "title": "Email" }, "print": { "title": "Print" } }, "facebook_sdk": { "lang": "en_US", "app_id": "" }, "lottie": { "defaultAnimationUrl": "\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json" } };
-	</script>
-	<script src="./wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.2.2"
-		id="elementor-pro-frontend-js"></script>
-	<script src="./wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2"
-		id="elementor-waypoints-js"></script>
-	<script src="./wp-includes/js/jquery/ui/core.min.js?ver=1.12.1" id="jquery-ui-core-js"></script>
-	<script src="./wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6" id="swiper-js"></script>
-	<script src="./wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.2.3"
-		id="share-link-js"></script>
-	<script src="./wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1"
-		id="elementor-dialog-js"></script>
-	<script id="elementor-frontend-js-before">
-		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile", "value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Extra", "value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet", "value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Extra", "value": 1365, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1620, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "direction": "min", "is_enabled": false } } }, "version": "3.2.3", "is_static": false, "experimentalFeatures": { "e_dom_optimization": true, "a11y_improvements": true, "landing-pages": true, "form-submissions": true }, "urls": { "assets": "\/wp-content\/plugins\/elementor\/assets\/" }, "settings": { "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 0, "title": "user&#039;s Blog! &#8211; Just another WordPress site", "excerpt": "" } };
-	</script>
-	<script src="./wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.2.3"
-		id="elementor-frontend-js"></script>
-	<script src="./wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.2.2"
-		id="pro-preloaded-elements-handlers-js"></script>
-	<script src="./wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.2.3"
-		id="preloaded-modules-js"></script>
+		</script>
+<script id="twenty-twenty-one-ie11-polyfills-js-after">
+( Element.prototype.matches && Element.prototype.closest && window.NodeList && NodeList.prototype.forEach ) || document.write( '<script src="/wp-content/themes/twentytwentyone/assets/js/polyfills.js?ver=1.3"><\/scr' + 'ipt>' );
+</script>
+<script src="/./wp-content/themes/twentytwentyone/assets/js/responsive-embeds.js?ver=1.3" id="twenty-twenty-one-responsive-embeds-script-js"></script>
+<script src="/./wp-includes/js/wp-embed.min.js?ver=5.7.2" id="wp-embed-js"></script>
+<script src="/./wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.2.2" id="elementor-pro-webpack-runtime-js"></script>
+<script src="/./wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.2.3" id="elementor-webpack-runtime-js"></script>
+<script src="/./wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.2.3" id="elementor-frontend-modules-js"></script>
+<script src="/./wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.2.2" id="elementor-sticky-js"></script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce":"4308797a78","urls":{"assets":"\/wp-content\/plugins\/elementor-pro\/assets\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src="/./wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.2.2" id="elementor-pro-frontend-js"></script>
+<script src="/./wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+<script src="/./wp-includes/js/jquery/ui/core.min.js?ver=1.12.1" id="jquery-ui-core-js"></script>
+<script src="/./wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6" id="swiper-js"></script>
+<script src="/./wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.2.3" id="share-link-js"></script>
+<script src="/./wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1" id="elementor-dialog-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1365,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1620,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"direction":"min","is_enabled":false}}},"version":"3.2.3","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"landing-pages":true,"form-submissions":true},"urls":{"assets":"\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":0,"title":"user&#039;s Blog! &#8211; Just another WordPress site","excerpt":""}};
+</script>
+<script src="/./wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.2.3" id="elementor-frontend-js"></script>
+<script src="/./wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.2.2" id="pro-preloaded-elements-handlers-js"></script>
+<script src="/./wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.2.3" id="preloaded-modules-js"></script>
 	<script>
-		/(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", (function () { var t, e = location.hash.substring(1); /^[A-z0-9_-]+$.test(e)&&(t=document.getElementById(e))&&(/ ^ (?: a | select | input | button | textarea)$ / i.test(t.tagName) || (t.tabIndex = -1), t.focus())}), !1);
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",(function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())}),!1);
 	</script>
-
+	
 </body>
-
 </html>
