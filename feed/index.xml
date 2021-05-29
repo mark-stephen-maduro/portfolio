@@ -8,10 +8,10 @@
 	>
 
 <channel>
-	<title>user&#039;s Blog!</title>
+	<title>Mark Stephen</title>
 	<atom:link href="http://localhost/wordpress/feed/" rel="self" type="application/rss+xml" />
 	<link>/.</link>
-	<description>Just another WordPress site</description>
+	<description>Portfolio</description>
 	<lastBuildDate>Fri, 14 May 2021 15:58:05 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
