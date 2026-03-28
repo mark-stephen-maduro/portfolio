@@ -75,7 +75,6 @@ export const STACK = [
 export const STATS = [
   ['6+',        'Years Experience'],
   ['15+',       'Projects Shipped'],
-  ['PH · SG · US · AU · JP', 'Markets Served'],
 ]
 
 export const NAV_LINKS = [
