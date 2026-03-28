@@ -114,8 +114,15 @@ body {
 }
 
 .project-card {
-  width: clamp(300px, 35vw, 480px);
-  height: clamp(420px, 60vh, 600px);
+  width: clamp(300px, 80vw, 480px);
+  height: clamp(300px, 50vh, 600px);
+}
+
+@media (min-width: 768px) {
+  .project-card {
+    width: clamp(300px, 35vw, 480px);
+    height: clamp(420px, 60vh, 600px);
+  }
 }
 
 /* ─── Link hover lift ───────────────────────────────────────────────── */

@@ -89,7 +89,7 @@ export function Hero() {
   }
 
   return (
-    <section ref={ref} className="relative min-h-screen flex flex-col justify-end section-pad overflow-hidden">
+    <section ref={ref} className="relative min-h-[70svh] md:min-h-screen flex flex-col justify-end section-pad overflow-hidden">
       <div className="absolute top-8 right-8 text-right hidden md:block">
         <p className="font-mono text-xs text-muted tracking-widest uppercase">Manila, PH</p>
       </div>

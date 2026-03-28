@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 // indent stored as Tailwind arbitrary-value classes — no inline styles needed
 const LINES = [
