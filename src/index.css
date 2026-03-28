@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Design Tokens ─────────────────────────────────────────────────── */
+:root {
+  --cream:   #f0ebe0;
+  --signal:  #ff2d00;
+  --void:    #060606;
+  --muted:   #8a8070;
+}
+
+/* ─── Reset ──────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  background: var(--cream);
+  color: var(--void);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: auto; /* Lenis handles smooth scroll */
+}
+
+body {
+  background: var(--cream);
+  overflow-x: hidden;
+}
+
+/* ─── Hide default cursor (custom cursor active on desktop) ─────────── */
+@media (min-width: 768px) {
+  * { cursor: none !important; }
+}
+
+/* ─── Grain overlay ─────────────────────────────────────────────────── */
+@keyframes grain-shift {
+  0%  { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  20% { transform: translate(-15%, 5%); }
+  30% { transform: translate(7%, -25%); }
+  40% { transform: translate(-5%, 25%); }
+  50% { transform: translate(-15%, 10%); }
+  60% { transform: translate(15%, 0%); }
+  70% { transform: translate(0%, 15%); }
+  80% { transform: translate(3%, 35%); }
+  90% { transform: translate(-10%, 10%); }
+  100% { transform: translate(0, 0); }
+}
+
+.grain-overlay {
+  position: fixed;
+  inset: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 9998;
+  animation: grain-shift 8s steps(10) infinite;
+}
+
+/* ─── Custom Cursor ─────────────────────────────────────────────────── */
+/* mix-blend-mode: difference + white = auto-inverts against any background */
+.cursor-dot {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  will-change: transform;
+}
+
+.cursor-ring {
+  position: fixed;
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid white;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9997;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  transition: width 0.3s ease, height 0.3s ease;
+  will-change: transform;
+}
+
+.cursor-ring.hovering {
+  width: 64px;
+  height: 64px;
+}
+
+/* ─── Page transition wipe ──────────────────────────────────────────── */
+.page-wipe {
+  position: fixed;
+  inset: 0;
+  background: var(--signal);
+  z-index: 9500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* ─── Horizontal scroll ─────────────────────────────────────────────── */
+.work-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+}
+
+.project-card {
+  width: clamp(300px, 35vw, 480px);
+  height: clamp(420px, 60vh, 600px);
+}
+
+/* ─── Link hover lift ───────────────────────────────────────────────── */
+a {
+  transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              color 0.2s ease;
+}
+a:hover { transform: translateY(-1px); }
+
+/* ─── Preloader counter ─────────────────────────────────────────────── */
+.preloader {
+  position: fixed;
+  inset: 0;
+  background: var(--void);
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 3rem 4rem;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .preloader { padding: 2rem; }
+}
+
+/* ─── Section spacing ───────────────────────────────────────────────── */
+.section-pad { padding: 6rem 4rem; }
+
+@media (max-width: 768px) {
+  .section-pad { padding: 4rem 1.5rem; }
+}
+
+/* ─── Marquee ───────────────────────────────────────────────────────── */
+/* Two sibling .marquee-set divs animate together. Each set is one full
+   loop of content, so moving both by -100% of one set = seamless reset. */
+@keyframes marquee {
+  to { transform: translateX(-100%); }
+}
+
+.marquee-outer {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-set {
+  display: flex;
+  flex-shrink: 0;
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
