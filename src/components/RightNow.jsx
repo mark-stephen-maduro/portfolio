@@ -27,8 +27,7 @@ function Cell({ label, value, mono, signal }) {
     <div className="rn-cell bg-cream p-8 flex flex-col justify-between min-h-[140px]">
       <p className="font-mono text-xs text-muted tracking-widest uppercase mb-4">{label}</p>
       <p
-        className={`${mono ? 'font-mono' : 'font-bebas'} ${signal ? 'text-signal' : 'text-void'} leading-tight`}
-        style={{ fontSize: mono ? '0.85rem' : 'clamp(1rem, 2vw, 1.3rem)' }}
+        className={`${mono ? 'font-mono text-[0.85rem]' : 'font-bebas text-[clamp(1rem,2vw,1.3rem)]'} ${signal ? 'text-signal' : 'text-void'} leading-tight`}
       >
         {value}
       </p>

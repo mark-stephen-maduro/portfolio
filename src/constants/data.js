@@ -6,7 +6,7 @@ export const PROJECTS = [
     year: '2026–Now',
     desc: 'Building and maintaining websites and web applications for a web design company using Craft CMS, Twig, React, and Shopify — across a diverse portfolio of brands and industries.',
     tags: ['Craft CMS', 'Twig', 'React', 'Shopify', 'JavaScript'],
-    color: '#b85c00',  // burnt orange
+    bgClass: 'bg-[#b85c00]',
   },
   {
     index: '02',
@@ -15,7 +15,7 @@ export const PROJECTS = [
     year: '2022–2026',
     desc: 'Maintained and scaled the company website and e-commerce platform for Other World Computing using Craft CMS and Twig.',
     tags: ['JavaScript', 'React', 'Craft CMS', 'Twig', 'E-Commerce'],
-    color: '#0a3060',  // deep blue
+    bgClass: 'bg-[#0a3060]',
   },
   {
     index: '03',
@@ -24,7 +24,7 @@ export const PROJECTS = [
     year: '2024–2025',
     desc: 'Built real estate listing websites and a Shopify storefront for a realty company — property search, listings, and commerce under one brand.',
     tags: ['React', 'Node.js', 'Shopify', 'JavaScript'],
-    color: '#8c1515',  // deep red
+    bgClass: 'bg-[#8c1515]',
   },
   {
     index: '04',
@@ -33,7 +33,7 @@ export const PROJECTS = [
     year: '2021–2022',
     desc: 'Built an informational and booking platform for a Singapore music school with live class integration.',
     tags: ['React', 'TypeScript', 'Node.js'],
-    color: '#2a1040',  // deep purple
+    bgClass: 'bg-[#2a1040]',
   },
   {
     index: '05',
@@ -42,7 +42,7 @@ export const PROJECTS = [
     year: '2021–2022',
     desc: 'Developed key sections of the official Honda Philippines informational website, focusing on performance and brand fidelity.',
     tags: ['React.js', 'TypeScript', 'Node.js'],
-    color: '#5c0a0a',  // dark maroon
+    bgClass: 'bg-[#5c0a0a]',
   },
   {
     index: '06',
@@ -51,7 +51,7 @@ export const PROJECTS = [
     year: '2021–2022',
     desc: 'Built a variety of client websites for a web design company — spanning WordPress builds and Shopify storefronts across multiple industries.',
     tags: ['WordPress', 'Shopify', 'JavaScript', 'HTML/CSS'],
-    color: '#0a1a2a',  // dark teal-navy
+    bgClass: 'bg-[#0a1a2a]',
   },
   {
     index: '07',
@@ -60,7 +60,7 @@ export const PROJECTS = [
     year: '2019–2021',
     desc: 'Designed and engineered a complete B2B ERP — design system, inventory, procurement, sales, billing, and identity management.',
     tags: ['Design System', 'Full-Stack', 'IAM', 'Enterprise'],
-    color: '#111827',  // slate dark
+    bgClass: 'bg-[#111827]',
   },
 ]
 

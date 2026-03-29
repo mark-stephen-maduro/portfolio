@@ -26,7 +26,7 @@ export default function App() {
 
       {!loaded && <Preloader onComplete={onComplete} />}
 
-      <div style={{ opacity: loaded ? 1 : 0, transition: 'opacity 0.4s ease' }}>
+      <div className={`transition-opacity duration-[400ms] ease-in-out ${loaded ? 'opacity-100' : 'opacity-0'}`}>
         <Navbar />
         <main>
           <Hero />

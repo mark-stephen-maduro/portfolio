@@ -7,8 +7,7 @@ import { PROJECTS } from '../constants/data'
 function ProjectCard({ project }) {
   return (
     <div
-      className="group project-card flex-shrink-0 relative overflow-hidden"
-      style={{ background: project.color }}
+      className={`group project-card flex-shrink-0 relative overflow-hidden ${project.bgClass}`}
       data-hover
     >
       <div className="absolute top-6 left-6">

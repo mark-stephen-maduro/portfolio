@@ -2,7 +2,8 @@ import { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 
 export function Preloader({ onComplete }) {
-  const ref = useRef(null)
+  const ref    = useRef(null)
+  const barRef = useRef(null)
   const [count, setCount] = useState(0)
 
   useEffect(() => {
@@ -12,9 +13,11 @@ export function Preloader({ onComplete }) {
       if (current >= 100) {
         current = 100
         clearInterval(interval)
+        if (barRef.current) barRef.current.style.width = '100%'
         gsap.to(ref.current, { yPercent: -100, duration: 0.9, ease: 'power3.inOut', delay: 0.3, onComplete })
         return
       }
+      if (barRef.current) barRef.current.style.width = `${current}%`
       setCount(current)
     }, 28)
 
@@ -30,8 +33,8 @@ export function Preloader({ onComplete }) {
       {/* width is the only remaining inline style — it's a dynamic runtime value */}
       <div className="w-full h-px bg-white/10 mt-4 relative overflow-hidden">
         <div
+          ref={barRef}
           className="absolute left-0 top-0 h-full bg-signal transition-[width] duration-100 ease-linear"
-          style={{ width: `${count}%` }}
         />
       </div>
     </div>

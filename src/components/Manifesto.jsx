@@ -15,7 +15,7 @@ export function Manifesto() {
       <div className="max-w-6xl">
         <div ref={line1} className="mb-6">
           <p className="font-bebas uppercase text-void/30 leading-tight text-lead">
-            Most code gets forgotten.
+            Most code doesn't survive growth.
           </p>
         </div>
 
