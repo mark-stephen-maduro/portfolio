@@ -52,7 +52,7 @@ export function Navbar() {
         ))}
         <a
           href="mailto:mark.zizon@gmail.com"
-          className={`font-mono text-xs px-4 py-2 tracking-widest uppercase transition-colors duration-300 ${hireCls}`}
+          className={`font-mono text-xs px-4 py-2 tracking-widest uppercase whitespace-nowrap transition-colors duration-300 ${hireCls}`}
         >
           Hire Me
         </a>

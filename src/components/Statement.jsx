@@ -3,9 +3,9 @@ import gsap from 'gsap'
 
 // indent stored as Tailwind arbitrary-value classes — no inline styles needed
 const LINES = [
-  { words: ['MAKE', 'IT', 'FEEL.'],              indent: 'pl-[10vw]' },
-  { words: ['MAKE', 'IT', 'MEAN', 'SOMETHING.'], indent: 'pl-[20vw]' },
-  { words: ['KEEP', 'IT', 'RAW.'],               indent: 'pl-[5vw]'  },
+  { words: ['MAKE', 'IT', 'FEEL.'],              indent: 'md:pl-[10vw]' },
+  { words: ['MAKE', 'IT', 'MEAN', 'SOMETHING.'], indent: 'md:pl-[20vw]' },
+  { words: ['KEEP', 'IT', 'RAW.'],               indent: 'md:pl-[5vw]'  },
 ]
 
 const ALL_WORDS = LINES.flatMap((l) => l.words)
@@ -43,15 +43,15 @@ export function Statement() {
   return (
     <section
       ref={ref}
-      className="bg-void flex flex-col justify-center min-h-screen overflow-hidden gap-[0.05em]"
+      className="bg-void flex flex-col justify-center min-h-screen overflow-hidden gap-[0.05em] px-6 md:px-0"
       data-dark
     >
       {LINES.map(({ words, indent }, li) => (
-        <div key={li} className={`${indent} leading-[0.88] whitespace-nowrap`}>
+        <div key={li} className={`${indent} leading-[0.88] md:whitespace-nowrap`}>
           {words.map((word, wi) => (
             <span
               key={`${li}-${wi}`}
-              className="stmt-word font-bebas text-cream text-statement inline-block mr-[0.2em]"
+              className="stmt-word font-bebas text-cream text-[11vw] md:text-statement inline-block mr-[0.2em]"
             >
               {word}
             </span>

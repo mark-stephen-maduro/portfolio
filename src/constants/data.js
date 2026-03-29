@@ -67,7 +67,7 @@ export const PROJECTS = [
 export const STACK = [
   { label: 'Frontend',       items: ['React.js', 'Vue.js', 'Nuxt.js', 'TypeScript', 'HTML/CSS/SCSS'] },
   { label: 'Backend',        items: ['Node.js', 'Express.js', 'C#', 'Java', 'MySQL', 'NoSQL', 'Couchbase'] },
-  { label: 'Infrastructure', items: ['Docker', 'NGINX', 'Git', 'Linux'] },
+  { label: 'Infrastructure', items: ['Docker', 'NGINX', 'Git'] },
   { label: 'CMS / Commerce', items: ['Craft CMS', 'Twig', 'WordPress', 'Shopify'] },
   { label: 'Design',         items: ['Adobe XD', 'Photoshop', 'Illustrator'] },
 ]

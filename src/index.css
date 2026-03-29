@@ -158,21 +158,21 @@ a:hover { transform: translateY(-1px); }
 }
 
 /* ─── Marquee ───────────────────────────────────────────────────────── */
-/* Two sibling .marquee-set divs animate together. Each set is one full
-   loop of content, so moving both by -100% of one set = seamless reset. */
+/* Outer contains two identical sets. Animating outer by -50% = one full
+   set width, so the reset point is invisible — no flicker. */
 @keyframes marquee {
-  to { transform: translateX(-100%); }
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
 
 .marquee-outer {
   display: flex;
-  overflow: hidden;
-  width: 100%;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+  will-change: transform;
 }
 
 .marquee-set {
   display: flex;
   flex-shrink: 0;
-  animation: marquee 28s linear infinite;
-  will-change: transform;
 }
