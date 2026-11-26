@@ -109,7 +109,7 @@ export function Hero() {
             Full-Stack Software Engineer
           </p>
           <p className="font-mono text-muted text-xs mt-2 tracking-wider">
-            6+ Years Experience
+            7+ Years Experience
           </p>
         </div>
 
